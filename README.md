@@ -1,6 +1,7 @@
 # My repo 0_o
-<h6>All my trash and some more<br><br>
+All my trash and some more<br><br>
 
+<h6>
 <table>
     <tr><td>[1][Sorting DB - Скрипты для работы с АП](https://github.com/Jazis/just_just_just/tree/master/Sorting%20DB)</td></tr>
     <tr><td>[2][Diploma - Диплом](https://github.com/Jazis/just_just_just/tree/master/Diploma)</td></tr>
@@ -10,3 +11,4 @@
     <tr><td>[6][Auto sqlmap - Не хватило ума на многопоточность, да и оно там не особо нужно](https://github.com/Jazis/just_just_just/tree/master/auto_sqlmap)</td></tr>
     <tr><td>[7][Dork splitter - Позволяет получить дорки из ссылок и разбить их на части](https://github.com/Jazis/just_just_just/tree/master/payment_html)</td></tr>
 </table>
+</h6>
