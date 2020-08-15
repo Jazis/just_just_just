@@ -1,0 +1,4 @@
+sakharov:Icylqtea2 | 193.232.56.60 | Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0 
+asherbina@muctr.ru:Chalykh1811 | 193.232.56.60 | Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36 
+lyasn@muctr.ru:n45n33L2 | 193.232.56.60 | Mozilla/5.0 (Windows NT 5.1; rv:52.0) Gecko/20100101 Firefox/52.0 
+tgguseva:0212tgguseva | 193.232.56.60 | Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36 
