@@ -11,5 +11,6 @@ All my trash and some more<br><br>
     <tr><td>- 6 - [Auto sqlmap - Не хватило ума на многопоточность, да и оно там не особо нужно](https://github.com/Jazis/just_just_just/tree/master/auto_sqlmap)</td></tr>
     <tr><td>- 7 - [Dork splitter - Позволяет получить дорки из ссылок и разбить их на части](https://github.com/Jazis/just_just_just/tree/master/payment_html)</td></tr>
     <tr><td>- 8 - [Downloader - Подкачка файлов и проверка версий](https://github.com/Jazis/just_just_just/tree/master/Downloader)</td></tr>
+    <tr><td>- 9 - [For telegram bot - модули для тг бота](https://github.com/Jazis/just_just_just/tree/master/For%20telegram%20bot)</td></tr>
 </table>
 </h5>
