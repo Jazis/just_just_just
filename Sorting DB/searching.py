@@ -5,6 +5,7 @@ import pymysql.cursors
 import os
 import requests
 import time
+from threading import Thread
 
 def create_tables():
     counter = 0
@@ -123,29 +124,44 @@ def searching():
     print('------------------------')
 
 
+def func(qwe):
+    try:
+        bkv = qwe[0] + qwe[1]
+        bkv = bkv.lower()
+        open( 'sorting/' + bkv + '.txt', 'a+').write(qwe)
+    except IndexError:
+        pass
+    except OSError:
+        pass   
+
 def base_sorting():
     counter0 = 0
     counter1 = 0
     while True:
         base = input('BSE PLZ RETARD FR SRT ->')
+        threads1 = []
+        threads0 = []
         base = base.replace('"', '').replace("'", "").replace(' ', '')
         with open(base, 'r') as file:
             try:
                 for line in file:
+                    line = line.replace('\r', '')
                     try:
-                        bkv = line[0] + line[1] + line[2]
-                        bkv = bkv.lower()
-                        open( 'sorting1/' + bkv + '.txt', 'a+').write(line)
-                        # counter0 += 1
-                        # counter1 += 1
-                        # if counter1 == 100000:
-                        #     print(counter0)
-                        #     counter1 = 0
-                    except IndexError:
-                        pass
-                    except UnicodeDecodeError:
-                        pass
-                    except FileNotFoundError:
+                        if len(threads0) >= 500:
+                            time.sleep(0.1)
+                            threads0 = []
+                            threads1.append(line)
+                            thread2 = Thread(target=func, args=(line, ))
+                            thread2.start()
+                        else:
+                            try:
+                                threads1 = []
+                                threads0.append(line)
+                                thread1 = Thread(target=func, args=(line, ))
+                                thread1.start()
+                            except RuntimeError:
+                                pass
+                    except RuntimeError:
                         pass
             except UnicodeDecodeError:
                 pass
