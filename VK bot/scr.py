@@ -7,8 +7,8 @@ from thread import start_new_thread
 from selenium.webdriver.common.keys import Keys
 
 class login_date():
-    login = '#########'
-    paswd = '#########'
+    login = '###########'
+    paswd = '###########'
 
 class temp():
     page = ''
@@ -16,6 +16,7 @@ class temp():
     fri = ''
     folder = ''
     audio_page = ''
+    page_id = ''
     timer = 250
 
 def music(driver):
@@ -130,11 +131,13 @@ def message_check(driver):
         except IndexError:
             pass
 
-
+def stat_check(driver):
+    driver.get('https://vk.com/stats?act=visitors&mid=' + temp.page_id)
+    driver.save_screenshot(temp.folder + '/statistic.png')
 
 def actions(driver):
     os.system('clear')
-    print '[+] Im on this page - ' + temp.page
+    print '[+] Im on this page - ' + temp.page + ' | ID:' + temp.page_id
     print '[+] Your messages - ' + temp.msg
     print '[+] Your new friends - ' + temp.fri
     print "\t\tWhat do you want?"
@@ -143,6 +146,7 @@ def actions(driver):
     print "\t[3]Friends online"
     print "\t[4]Recheck main page"
     print "\t[5]Messages check"
+    print "\t[6]Stat checker"
     print "\t[99]Timer set"
 
 
@@ -157,6 +161,8 @@ def actions(driver):
         page_checking(driver)
     if selection == 5:
         message_check(driver)
+    if selection == 6:
+        stat_check(driver)
     if selection == 99:
         timer()
     actions(driver)
@@ -166,10 +172,13 @@ def page_checking(driver):
     trash1 = []
     trash2 = []
     trash3 = []
+    trash4 = []
     page = []
     driver.get('https://vk.com/feed')
     page.append(driver.page_source.split('"'))
     for i in range(len(page[0])):
+        if 'l_ph' in page[0][i]:
+            trash4.append(page[0][i+4])
         if 'l_pr' in page[0][i]:
             # print page[0][i+4]
             trash0.append(page[0][i+4])
@@ -193,6 +202,7 @@ def page_checking(driver):
         temp.msg = trash1[0]
     temp.fri = trash2[0]
     temp.audio_page = str(trash3[1])
+    temp.page_id = str(trash4[0]).split('albums')[1]
 
     temp.folder = str(trash0[0]).replace('/', '')
     
