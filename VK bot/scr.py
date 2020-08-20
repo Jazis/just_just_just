@@ -5,6 +5,7 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 from thread import start_new_thread
 from selenium.webdriver.common.keys import Keys
+import random
 
 class login_date():
     login = '###########'
@@ -17,6 +18,7 @@ class temp():
     folder = ''
     audio_page = ''
     page_id = ''
+    wayfarer = False
     timer = 250
 
 def music(driver):
@@ -135,9 +137,26 @@ def stat_check(driver):
     driver.get('https://vk.com/stats?act=visitors&mid=' + temp.page_id)
     driver.save_screenshot(temp.folder + '/statistic.png')
 
+def wayfarer(driver):
+    page = []
+    human = []
+    page.append(driver.page_source.split('"'))
+    for i in range(len(page[0])):
+        if 'people_cell_name' in page[0][i]:
+            human.append(page[0][i+2])
+    # print len(human)
+    time.sleep(1)
+    for j in range(len(human)):
+        try:
+            sel = human[random.randint(0, len(human))]
+            driver.get('https://vk.com' + sel)
+        except IndexError:
+            pass
+        wayfarer(driver)
+
 def actions(driver):
     os.system('clear')
-    print '[+] Im on this page - ' + temp.page + ' | ID:' + temp.page_id
+    print '[+] Im on this page - ' + temp.page + ' | ID:' + temp.page_id + ' | Wayfarer mode: ' + str(temp.wayfarer)
     print '[+] Your messages - ' + temp.msg
     print '[+] Your new friends - ' + temp.fri
     print "\t\tWhat do you want?"
@@ -147,8 +166,8 @@ def actions(driver):
     print "\t[4]Recheck main page"
     print "\t[5]Messages check"
     print "\t[6]Stat checker"
+    print "\t[7]Wayfarer"
     print "\t[99]Timer set"
-
 
     selection = input('->')
     if selection == 1:
@@ -163,6 +182,10 @@ def actions(driver):
         message_check(driver)
     if selection == 6:
         stat_check(driver)
+    if selection == 7:
+        driver.get('https://vk.com/id' + temp.page_id)
+        temp.wayfarer = True
+        start_new_thread(wayfarer, (driver, ))
     if selection == 99:
         timer()
     actions(driver)
@@ -234,8 +257,11 @@ def login(driver):
 
 
 if __name__ == '__main__':
+    options = webdriver.ChromeOptions()
+    options.add_argument("--start-maximized")
+    # options.add_argument('headless')
     chrome_path = '/home/jazisett/Documents/projects/music/chromedriver'
-    driver = webdriver.Chrome(chrome_path)
+    driver = webdriver.Chrome(chrome_path, chrome_options=options)
     driver.get('https://vk.com/')
     login(driver)
     page_checking(driver)
