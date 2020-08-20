@@ -7,8 +7,8 @@ from thread import start_new_thread
 from selenium.webdriver.common.keys import Keys
 
 class login_date():
-    login = '#############'
-    paswd = '#############'
+    login = '#########'
+    paswd = '#########'
 
 class temp():
     page = ''
@@ -101,6 +101,35 @@ def friends_online(driver):
     for j in range(len(friends_id)):
         open(temp.folder + '/friends_online.txt', 'a+').write(friends_id[j].encode('utf-8') + ' | ' + friends_name[j].encode('utf-8'))
 
+def message_check(driver):
+    friends_name = []
+    friends_msg = []
+    open(temp.folder + '/friends_messages.txt', 'w')
+    page = []
+    driver.get('https://vk.com/im')
+    page.append(driver.page_source.split('"'))
+    for i in range(len(page[0])):
+        if 'nim-dialog--name' in page[0][i]:
+            name = page[0][i+7]
+            friends_name.append(name.split('<img')[0])
+        if 'nim-dialog--text-preview' in page[0][i]: #15
+            if '<span' in page[0][i+5].split('</span>')[0]:
+                msg = page[0][i+15]
+                friends_msg.append(msg.split('</span>')[0].replace('>', ''))
+            else:
+                msg = page[0][i+5]
+                friends_msg.append(msg.split('</span>')[0].replace('>', ''))
+            msg = page[0][i+5]
+            friends_msg.append(msg.split('</span>')[0].replace('>', ''))
+    for j in range(len(friends_name)):
+        try:
+            if 'class=' in friends_name[j] or 'class=' in friends_msg[j] or 'src=' in friends_name[j] or 'src=' in friends_msg[j]:
+                pass
+            else:
+                open(temp.folder + '/friends_messages.txt', 'a+').write(friends_name[j].replace('>', '').encode('utf-8') + ' | ' + friends_msg[j].encode('utf-8') + '\n')
+        except IndexError:
+            pass
+
 
 
 def actions(driver):
@@ -113,6 +142,7 @@ def actions(driver):
     print "\t[2]Check your music"
     print "\t[3]Friends online"
     print "\t[4]Recheck main page"
+    print "\t[5]Messages check"
     print "\t[99]Timer set"
 
 
@@ -125,6 +155,8 @@ def actions(driver):
         friends_online(driver)
     if selection == 4:
         page_checking(driver)
+    if selection == 5:
+        message_check(driver)
     if selection == 99:
         timer()
     actions(driver)
