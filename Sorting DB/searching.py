@@ -136,6 +136,10 @@ try:
             pass   
 
     def base_sorting():
+        try:
+            os.mkdir('sorting')
+        except OSError:
+            pass
         counter0 = 0
         counter1 = 0
         while True:
@@ -168,6 +172,10 @@ try:
                     pass
 
     def base_sorting_struct():
+        try:
+            os.mkdir('sorting')
+        except OSError:
+            pass
         while True:
             base = input('BSE PLZ RETARD FR SRT ->')
             base = base.replace('"', '').replace("'", "").replace(' ', '')
