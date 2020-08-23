@@ -147,7 +147,7 @@ try:
         except OSError:
             pass   
 
-    def base_sorting():
+    def sorting_base():
         try:
             os.mkdir('sorting')
         except OSError:
@@ -185,6 +185,83 @@ try:
                 except UnicodeDecodeError:
                     pass
 
+    class temp_0_0():
+        counter = 0
+        summary = 0 
+
+    def func_vk(line, file, file_size):
+        for i in range(len(line.split(','))):
+            email = line.split(',')[2].replace("'", '').replace(' ', '')
+            phone = line.split(',')[4].replace("'", '').replace(' ', '').replace(');', '')
+        temp_0_0.counter = temp_0_0.counter + 1
+        if temp_0_0.counter == 10000:
+            temp_0_0.summary = 0
+            for i in range(len(os.listdir(os.path.abspath(__file__).replace(os.path.abspath(__file__).split('/')[-1], 'sorting_vk/')))):
+                file =  os.path.abspath(__file__).replace(os.path.abspath(__file__).split('/')[-1], 'sorting_vk/') + os.listdir(os.path.abspath(__file__).replace(os.path.abspath(__file__).split('/')[-1], 'sorting/'))[i]
+                temp_0_0.summary = temp_0_0.summary + os.path.getsize(file)
+            p = float(temp_0_0.summary)/float(file_size)*100
+            sys.stdout.write('\r' + '|-> ' + str(int(p)) + '%')
+            temp_0_0.counter = 0
+        try:
+            table_name = email[:2] + '$' + phone.replace(phone[-1], '')[-2:]
+            # print(table_name)
+            open( 'sorting_vk/' + table_name + '.txt', 'a+').write(line)
+        except IndexError:
+            pass
+        except OSError:
+            pass   
+
+    def sorting_vk():
+            try:
+                os.mkdir('sorting_vk')
+            except OSError:
+                pass
+            counter0 = 0
+            counter1 = 0
+            while True:
+                base = input('BSE PLZ RETARD FR SRT ->')
+                threads1 = []
+                threads0 = []
+                base = base.replace('"', '').replace("'", "").replace(' ', '')
+                file_size = os.path.getsize(base)
+                with open(base, 'r') as file:
+                    try:
+                        for line in file:
+                            line = line.replace('\r', '')
+                            try:
+                                if len(threads0) >= 300:
+                                    # sys.stdout.write("\n")   
+                                    time.sleep(0.1)
+                                    threads0 = []
+                                    threads1.append(line)
+                                    thread2 = Thread(target=func_vk, args=(line, file, file_size))
+                                    thread2.start()
+                                else:
+                                    try:
+                                        threads1 = []
+                                        threads0.append(line)
+                                        thread1 = Thread(target=func_vk, args=(line, file, file_size))
+                                        thread1.start()
+                                    except RuntimeError:
+                                        pass
+                            except RuntimeError:
+                                pass
+                    except UnicodeDecodeError:
+                        pass
+                    except:
+                        pass
+
+    def base_sorting():
+        print('\t------------------------|')
+        print('\t|[1]Sorting base        |')
+        print('\t|[2]Sorting VK          |')
+        print('\t------------------------|')
+        selection = input('Select -> ')
+        if selection == 1:
+            sorting_base()
+        if selection == 2:
+            sorting_vk()
+    
     def base_sorting_struct():
         while True:
             base = input('BSE PLZ RETARD FR SRT ->')
