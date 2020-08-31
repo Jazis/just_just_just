@@ -91,38 +91,42 @@ try:
         connection.close()
 
     def searching():
-        quer = input('Y0ur query -> ')
-        quer_bukv = quer[0] + quer[1]
-        quer_bukv = quer_bukv.lower()
-        print('------------------------')
-        connection = pymysql.connect(host='192.168.1.3',
-                                user='Jazis',
-                                password='1234567890',
-                                db='crew_db',
-                                charset='utf8mb4',
-                                cursorclass=pymysql.cursors.DictCursor)
         try:
-            with connection.cursor() as cursor:
-            #   print('12112')
-                #print(str(bd_searcher))
-                sql = "SELECT * FROM `{0}` WHERE `combos` LIKE '%{1}%'".format(quer_bukv, quer)
-                cursor.execute(sql)
-                rows = cursor.fetchall()
-                # print(len(rows))
-                if len(rows) == 0:
-                    print('>:(')
-                for row in rows:
-                    for i in range(len(str(row).split("'"))):
-                        if ':' in str(row).split("'")[i] and '@' in str(row).split("'")[i] and '.' in str(row).split("'")[i]:
-                            rr = str(row).split("'")[i]
-                            print(rr)
-                connection.commit()
-                time.sleep(0.1)
-        except pymysql.err.OperationalError:
-            pass
-        except pymysql.err.ProgrammingError:
-            pass
-        print('------------------------')
+            quer = input('Y0ur query -> ')
+            quer_bukv = quer[0] + quer[1]
+            quer_bukv = quer_bukv.lower()
+            print('------------------------')
+            connection = pymysql.connect(host='192.168.1.3',
+                                    user='Jazis',
+                                    password='1234567890',
+                                    db='crew_db',
+                                    charset='utf8mb4',
+                                    cursorclass=pymysql.cursors.DictCursor)
+            try:
+                with connection.cursor() as cursor:
+                #   print('12112')
+                    #print(str(bd_searcher))
+                    sql = "SELECT * FROM `{0}` WHERE `combos` LIKE '%{1}%'".format(quer_bukv, quer)
+                    cursor.execute(sql)
+                    rows = cursor.fetchall()
+                    # print(len(rows))
+                    if len(rows) == 0:
+                        print('>:(')
+                    for row in rows:
+                        for i in range(len(str(row).split("'"))):
+                            if ':' in str(row).split("'")[i] and '@' in str(row).split("'")[i] and '.' in str(row).split("'")[i]:
+                                rr = str(row).split("'")[i]
+                                print(rr)
+                    connection.commit()
+                    time.sleep(0.1)
+            except pymysql.err.OperationalError:
+                pass
+            except pymysql.err.ProgrammingError:
+                pass
+            print('------------------------')
+        except IndexError:
+            print("Error. Try again")
+            searching()
 
     class temp_0():
         counter = 0
