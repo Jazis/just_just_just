@@ -183,10 +183,10 @@ try:
                                         pass
                             except RuntimeError:
                                 pass
-                    except UnicodeDecodeError:
+                            except UnicodeDecodeError:
+                                pass
+                    except OSError:
                         pass
-        except OSError:
-            pass
 
     class temp_0_0():
         counter = 0
