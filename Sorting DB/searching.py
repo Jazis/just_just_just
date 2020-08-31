@@ -95,9 +95,9 @@ try:
         quer_bukv = quer[0] + quer[1]
         quer_bukv = quer_bukv.lower()
         print('------------------------')
-        connection = pymysql.connect(host='localhost',
-                                user='root',
-                                password='',
+        connection = pymysql.connect(host='192.168.1.3',
+                                user='Jazis',
+                                password='1234567890',
                                 db='crew_db',
                                 charset='utf8mb4',
                                 cursorclass=pymysql.cursors.DictCursor)
@@ -149,7 +149,7 @@ try:
 
     def sorting_base():
         try:
-            os.mkdir('sorting')
+            os.system('mkdir sorting/')
         except OSError:
             pass
         counter0 = 0
@@ -160,30 +160,33 @@ try:
             threads0 = []
             base = base.replace('"', '').replace("'", "").replace(' ', '')
             file_size = os.path.getsize(base)
-            with open(base, 'r') as file:
-                try:
-                    for line in file:
-                        line = line.replace('\r', '')
-                        try:
-                            if len(threads0) >= 500:
-                                # sys.stdout.write("\n")   
-                                time.sleep(0.1)
-                                threads0 = []
-                                threads1.append(line)
-                                thread2 = Thread(target=func, args=(line, file, file_size))
-                                thread2.start()
-                            else:
-                                try:
-                                    threads1 = []
-                                    threads0.append(line)
-                                    thread1 = Thread(target=func, args=(line, file, file_size))
-                                    thread1.start()
-                                except RuntimeError:
-                                    pass
-                        except RuntimeError:
-                            pass
-                except UnicodeDecodeError:
-                    pass
+            try:
+                with open(base, 'r') as file:
+                    try:
+                        for line in file:
+                            line = line.replace('\r', '')
+                            try:
+                                if len(threads0) >= 400:
+                                    # sys.stdout.write("\n")   
+                                    time.sleep(0.1)
+                                    threads0 = []
+                                    threads1.append(line)
+                                    thread2 = Thread(target=func, args=(line, file, file_size))
+                                    thread2.start()
+                                else:
+                                    try:
+                                        threads1 = []
+                                        threads0.append(line)
+                                        thread1 = Thread(target=func, args=(line, file, file_size))
+                                        thread1.start()
+                                    except RuntimeError:
+                                        pass
+                            except RuntimeError:
+                                pass
+                    except UnicodeDecodeError:
+                        pass
+        except OSError:
+            pass
 
     class temp_0_0():
         counter = 0
@@ -384,12 +387,12 @@ try:
 
     def load_data_infile():
         try:
-            connection = pymysql.connect(host='localhost',
-                                    user='root',
-                                    password='',
-                                    db='crew_db',
-                                    charset='utf8mb4',
-                                    cursorclass=pymysql.cursors.DictCursor)
+            connection = pymysql.connect(host='192.168.1.3',
+                                            user='Jazis',
+                                            password='1234567890',
+                                            db='crew_db',
+                                            charset='utf8mb4',
+                                            cursorclass=pymysql.cursors.DictCursor)
             counter = 0
             print('[+] ' + str(os.getcwd()))
             print('[+] ' + str(os.listdir(os.getcwd())))
