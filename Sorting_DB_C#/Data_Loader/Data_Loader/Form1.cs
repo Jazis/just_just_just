@@ -39,6 +39,10 @@ namespace Data_Loader
                     }
                     conn.Close();
                  }
+                else
+                {
+                    MessageBox.Show("Nothing found");
+                }
             }
             catch (Exception ex)
             {
