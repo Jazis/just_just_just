@@ -1,0 +1,12 @@
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\bin\Debug\Nick_parser.exe.config
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\bin\Debug\Nick_parser.exe
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\bin\Debug\Nick_parser.pdb
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\bin\Debug\SampAPI.dll
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.csprojAssemblyReference.cache
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.Form1.resources
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.Properties.Resources.resources
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.csproj.GenerateResource.cache
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.csproj.CoreCompileInputs.cache
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.csproj.CopyComplete
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.exe
+C:\Users\Jazis\source\repos\Nick_parser\Nick_parser\obj\Debug\Nick_parser.pdb
