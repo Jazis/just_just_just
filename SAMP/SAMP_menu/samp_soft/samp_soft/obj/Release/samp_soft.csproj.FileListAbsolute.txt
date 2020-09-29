@@ -10,3 +10,4 @@ C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csproj.Cor
 C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csproj.CopyComplete
 C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.exe
 C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.pdb
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\SampAPI.dll
