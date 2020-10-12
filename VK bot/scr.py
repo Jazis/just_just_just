@@ -3,7 +3,7 @@ import os
 from selenium import webdriver
 import time 
 from selenium.common.exceptions import NoSuchElementException
-from thread import start_new_thread
+import threading
 from selenium.webdriver.common.keys import Keys
 import random
 
@@ -67,7 +67,7 @@ def music(driver):
 
 
 def possible_friends(driver):
-    print "[Working]"
+    print("[Working]")
     friends_id = []
     friends_name = []
     friends_common = []
@@ -81,10 +81,10 @@ def possible_friends(driver):
             friends_id.append(page[0][i+2])
             friends_name.append(page[0][i+3].split('</a>')[0].replace('>', ''))
             friends_common.append(page[0][i+7].split('</a>')[0].replace('>', '').replace('&nbsp;', ' '))
-    print '[+]First step - Done'
+    print('[+]First step - Done')
     for j in range(len(friends_id)):
         open(temp.folder + '/possible_friends.txt', 'a+').write(friends_id[j].encode('utf-8') + ' | ' + friends_name[j].encode('utf-8') + ' | ' + friends_common[j].encode('utf-8') + '\n')
-    print '[+]Second step - Done'
+    print('[+]Second step - Done')
 
 def timer():
     temp.timer = input("Input timer in sec (250)-> ") 
@@ -129,7 +129,7 @@ def message_check(driver):
             if 'class=' in friends_name[j] or 'class=' in friends_msg[j] or 'src=' in friends_name[j] or 'src=' in friends_msg[j]:
                 pass
             else:
-                open(temp.folder + '/friends_messages.txt', 'a+').write(friends_name[j].replace('>', '').encode('utf-8') + ' | ' + friends_msg[j].encode('utf-8') + '\n')
+                open(temp.folder + '/friends_messages.txt', 'a+').write(str(friends_name[j]).replace('>', '').encode('utf-8') + ' | ' + str(friends_msg[j]).encode('utf-8') + '\n')
         except IndexError:
             pass
 
@@ -138,38 +138,56 @@ def stat_check(driver):
     driver.save_screenshot(temp.folder + '/statistic.png')
 
 def wayfarer(driver):
-    page = []
-    human = []
-    page.append(driver.page_source.split('"'))
-    for i in range(len(page[0])):
-        if 'people_cell_name' in page[0][i]:
-            human.append(page[0][i+2])
-    # print len(human)
-    time.sleep(1)
-    for j in range(len(human)):
-        try:
-            sel = human[random.randint(0, len(human))]
-            driver.get('https://vk.com' + sel)
-        except IndexError:
-            pass
-        wayfarer(driver)
+    if temp.Wayfarer == True:
+        temp.Wayfarer == False
+        print("[-] Wayfarer mod - OFF")
+    else:
+        driver.get('https://vk.com/id' + temp.page_id)
+        temp.Wayfarer == True
+        while temp.Wayfarer == True:
+            page = []
+            human = []
+            page.append(driver.page_source.split('"'))
+            for i in range(len(page[0])):
+                if 'people_cell_name' in page[0][i]:
+                    human.append(page[0][i+2])
+            # print len(human)
+            time.sleep(1)
+            for j in range(len(human)):
+                try:
+                    sel = human[random.randint(0, len(human))]
+                    driver.get('https://vk.com' + sel)
+                except IndexError:
+                    pass
+                wayfarer(driver)
+    
+
+def status(driver):
+    driver.get(temp.page)
+    driver.find_element_by_id("current_info").click()
+    time.sleep(0.5)
+    driver.find_element_by_id("currinfo_input").send_keys("BOT: ON")
+    time.sleep(0.5)
+    driver.find_element_by_id("currinfo_save").click()
+
 
 def actions(driver):
-    os.system('clear')
-    print '[+] Im on this page - ' + temp.page + ' | ID:' + temp.page_id + ' | Wayfarer mode: ' + str(temp.wayfarer)
-    print '[+] Your messages - ' + temp.msg
-    print '[+] Your new friends - ' + temp.fri
-    print "\t\tWhat do you want?"
-    print "\t[1]Checking possible friends"
-    print "\t[2]Check your music"
-    print "\t[3]Friends online"
-    print "\t[4]Recheck main page"
-    print "\t[5]Messages check"
-    print "\t[6]Stat checker"
-    print "\t[7]Wayfarer"
-    print "\t[99]Timer set"
+    # os.system('clear')
+    print('[+] Im on this page - ' + temp.page + ' | ID:' + temp.page_id + ' | Wayfarer mode: ' + str(temp.wayfarer))
+    print('[+] Your messages - ' + temp.msg)
+    print('[+] Your new friends - ' + temp.fri)
+    print("\t\tWhat do you want?")
+    print("\t[1]Checking possible friends")
+    print("\t[2]Check your music")
+    print("\t[3]Friends online")
+    print("\t[4]Recheck main page")
+    print("\t[5]Messages check")
+    print("\t[6]Stat checker")
+    print("\t[7]Wayfarer")
+    print("\t[8]Status set")
+    print("\t[99]Timer set")
 
-    selection = input('->')
+    selection = int(input('->'))
     if selection == 1:
         possible_friends(driver)
     if selection == 2:
@@ -183,9 +201,12 @@ def actions(driver):
     if selection == 6:
         stat_check(driver)
     if selection == 7:
-        driver.get('https://vk.com/id' + temp.page_id)
-        temp.wayfarer = True
-        start_new_thread(wayfarer, (driver, ))
+        thread = threading.Thread(target = wayfarer, args = [driver])
+        thread.start()
+    if selection == 8:
+        # thread = threading.Thread(target = status, args = driver)
+        # thread.start()
+        status(driver)
     if selection == 99:
         timer()
     actions(driver)
@@ -242,15 +263,16 @@ def online_timer(driver):
         
 
 def login(driver):
-    print '[+] Auth'
+    print('[+] Auth')
     driver.find_element_by_id('index_email').send_keys(str(login_date.login))
     driver.find_element_by_id('index_pass').send_keys(str(login_date.paswd))
     driver.find_element_by_id('index_login_button').click()
     while True:
         if driver.current_url == 'https://vk.com/feed':
-            print '[+] Auth Success'
+            print('[+] Auth Success')
             break
-    start_new_thread(online_timer, (driver, ))
+    thread = threading.Thread(target= online_timer, args = [driver])
+    thread.start()
     pass
 
 
@@ -260,8 +282,8 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     options.add_argument("--start-maximized")
     # options.add_argument('headless')
-    chrome_path = '/home/jazisett/Documents/projects/music/chromedriver'
-    driver = webdriver.Chrome(chrome_path, chrome_options=options)
+    # chrome_path = '/home/jazisett/Documents/projects/music/chromedriver'
+    driver = webdriver.Chrome(chrome_options=options)
     driver.get('https://vk.com/')
     login(driver)
     page_checking(driver)
