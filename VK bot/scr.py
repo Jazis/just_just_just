@@ -20,6 +20,10 @@ class temp():
     page_id = ''
     wayfarer = False
     timer = 250
+    status_msg = ""  
+
+class counters():
+    counter_timer = 0
 
 def music(driver):
     open(temp.folder + '/music.txt', 'w')
@@ -166,7 +170,7 @@ def status(driver):
     driver.get(temp.page)
     driver.find_element_by_id("current_info").click()
     time.sleep(0.5)
-    driver.find_element_by_id("currinfo_input").send_keys("BOT: ON")
+    driver.find_element_by_id("currinfo_input").send_keys(temp.status_msg + " | headless mode")
     time.sleep(0.5)
     driver.find_element_by_id("currinfo_save").click()
 
@@ -258,8 +262,11 @@ def page_checking(driver):
 
 def online_timer(driver):
     while True:
+        counters.counter_timer += 1
         time.sleep(temp.timer)
         driver.get('https://vk.com/feed')
+        temp.status_msg = "Yea -> " + str(counters.counter_timer)
+        status(driver)
         
 
 def login(driver):
@@ -280,7 +287,7 @@ def login(driver):
 
 if __name__ == '__main__':
     options = webdriver.ChromeOptions()
-    options.add_argument("--start-maximized")
+    options.add_argument("--headless")
     # options.add_argument('headless')
     # chrome_path = '/home/jazisett/Documents/projects/music/chromedriver'
     driver = webdriver.Chrome(chrome_options=options)
