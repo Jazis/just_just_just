@@ -1,9 +1,6 @@
-
-        # My repo 0_o
-
-        All my trash and some more<br><br>
-
-            - 1 - [CC_checker](https://github.com/Jazis/just_just_just/tree/master/CC_checker)
+# My repo 0_o
+All my trash and some more<br><br>
+- 1 - [CC_checker](https://github.com/Jazis/just_just_just/tree/master/CC_checker)
 - 2 - [Creation of databases(Generation)](https://github.com/Jazis/just_just_just/tree/master/Creation%20of%20databases(Generation))
 - 3 - [Diploma](https://github.com/Jazis/just_just_just/tree/master/Diploma)
 - 4 - [Diploma_mod](https://github.com/Jazis/just_just_just/tree/master/Diploma_mod)
