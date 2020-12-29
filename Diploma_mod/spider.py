@@ -2,6 +2,7 @@ import requests
 import time
 import threading
 import socket
+import os
 
 try:
     class selections():
@@ -21,6 +22,14 @@ try:
                 information.email_parsing = False
             else:
                 selections.selection_1()
+        def selection_settings():
+            selection = input("\n\tWhat you wanna do?\n\t[1] Start with default settings\n\t[2] Settings\n===>")
+            if selection == '1':
+                pass
+            elif selection == '2':
+                settings()
+            else:
+                selections.selection_0()
 
     class information():
         _isworking = False
@@ -39,15 +48,30 @@ try:
             "User-agent" : "Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.75 Mobile DuckDuckGo/5 Safari/537.36"
         }
 
+    def settings():
+        os.system("clear")
+        banner()
+        print ("""
+        \tAnd what you wanna do?
+        \t[1] Email parsing = {0}
+        \t[2] Something else = True""".format(information.email_parsing))
+        changing = input("\t\tex: 1=true\n\t===>")
+        changing = changing.replace(" ", "")
+        if changing.split("=")[0] == "1":
+            information.email_parsing = changing.split("=")[1]
+        if changing.split("=")[0] == "2":
+            test = changing.split("=")[1]
+            print (test)
     def error(error0):
         print(f"\tYou have an error -> {error0[0]} - {error0[1]}")
 
     def banner():
-        print("\t\t|===========================================|")
-        print("\t\t|                                           |")
-        print("\t\t|                   Work                    |")
-        print("\t\t|                                           |")
-        print("\t\t|===========================================|")
+                print("\n\t███████╗██████╗ ██╗██████╗ ███████╗██████╗") 
+                print("\t██╔════╝██╔══██╗██║██╔══██╗██╔════╝██╔══██╗")
+                print("\t███████╗██████╔╝██║██║  ██║█████╗  ██████╔╝")
+                print("\t╚════██║██╔═══╝ ██║██║  ██║██╔══╝  ██╔══██╗")
+                print("\t███████║██║     ██║██████╔╝███████╗██║  ██║")
+                print("\t╚══════╝╚═╝     ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝")
 
 
     def correction_url():
@@ -59,7 +83,7 @@ try:
         print("\t[+]Currect url = " + information.full_url)
 
     def input_infos():
-        information.full_url = input("\n\t\tInput url ->")
+        information.full_url = input("\n\tInput url ->")
         try:
             for i in range(len(information.full_url.split('/'))):
                 information.certificate = information.full_url.split(':')[0]
@@ -166,6 +190,7 @@ try:
 
     if __name__ == "__main__":
         banner()
+        selections.selection_settings()
         input_infos()
         print("\t[+] Getting information")
         print("\t[+] The definition of the encoding")
