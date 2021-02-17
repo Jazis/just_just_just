@@ -34,4 +34,4 @@
 
 <h3>README</h3>
 
-- 1 - [README](https://github.com/Jazis/just_just_just/blob/master/README.md) - Read.md
+- 1 - [README](https://github.com/Jazis/just_just_just/blob/master/README.md) - README.md
