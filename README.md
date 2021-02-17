@@ -20,6 +20,7 @@
 - 14 - [Python] [VK bot](https://github.com/Jazis/just_just_just/tree/master/VK%20bot) - Бот вк
 - 15 - [Python] [auto_sqlmap](https://github.com/Jazis/just_just_just/tree/master/auto_sqlmap) - Автоматизатор Sqlmap
 - 16 - [Python] [FACE](https://github.com/Jazis/just_just_just/tree/master/FACE) - Определение черт лица
+- 16 - [Python] [GitHub_readme_maker](https://github.com/Jazis/just_just_just/tree/master/GitHub_readme_maker) - Простой генератор Readme.md
 
 <h3>C#</h3>
 
