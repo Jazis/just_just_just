@@ -10,7 +10,7 @@
 - 3 - [Python] [Diploma](https://github.com/Jazis/just_just_just/tree/master/Diploma) - дипломная работа
 - 4 - [Python] [Diploma_mod](https://github.com/Jazis/just_just_just/tree/master/Diploma_mod) - дипломная работа(улучшенная)
 - 5 - [Python] [Dork splitter](https://github.com/Jazis/just_just_just/tree/master/Dork%20splitter) - Получение дорок
-- 6 - [Python] [Downloader](https://github.com/Jazis/just_just_just/tree/master/Downloader) - Загрузчик файлов с хоста (RAT)
+- 6 - [Python] [Downloader](https://github.com/Jazis/just_just_just/tree/master/Downloader) - Система контроля версий на Index of/
 - 8 - [Python] [For telegram bot](https://github.com/Jazis/just_just_just/tree/master/For%20telegram%20bot) - Модули бота 
 - 9 - [Python] [Log_site_gen](https://github.com/Jazis/just_just_just/tree/master/Log_site_gen) - Генератор логов с базой данных и php
 - 10 - [Python] [Mysearch](https://github.com/Jazis/just_just_just/tree/master/Mysearch) - Парсер поисковой выдачи Mysearch
