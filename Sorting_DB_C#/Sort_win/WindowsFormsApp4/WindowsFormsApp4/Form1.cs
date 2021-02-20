@@ -58,7 +58,7 @@ namespace WindowsFormsApp4
                                 mystr += qwer_bukv[i];
                     }
                     string two_bukv = mystr;
-                    string path = Convert.ToString(Directory.GetCurrentDirectory()) + "/sorted/" + two_bukv + ".txt";
+                    string path = Convert.ToString(Directory.GetCurrentDirectory()) + "/sorted/" + two_bukv.ToLower() + ".txt";
                     using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
                     {
                         await sw.WriteLineAsync(line);
