@@ -3,6 +3,7 @@ import time
 import threading
 import socket
 import os
+import re
 
 try:
     class selections():
@@ -157,6 +158,13 @@ try:
                         if "http://" in str(request0).split('"')[i] or "https://" in str(request0).split('"')[i] and information.url in str(request0).split('"')[i]:
                             for_parser.links.append(str(request0).split('"')[i])
                         if information.email_parsing == True:
+                            email_find = re.findall('\w{3,}@[A-z0-9].\S[A-z0-9]{2,}', str(request0))
+                            for elem in email_find: 
+                                if elem in for_parser.emails or "\\" in email_find or '\\x' in email_find: pass
+                                else:
+                                    for_parser.emails.append(email_find)
+                                    open("emails.txr", 'a+').write(elem + "\n")
+                                    #sprint(email_find)
                             if "@" in str(request0).split('"')[i] and "." in str(request0).split('"')[i]:
                                 for_parser.emails.append(str(request0).split('"')[i])
                     # print("[++++]" + str(len(for_parser.links)))
@@ -200,6 +208,9 @@ try:
         print(
             "\t[+] URL -> " + information.full_url + "\n",
             "\t[+] Cert -> " + information.certificate + "\n")
+
+        open("emails.txr", 'w')
+
         selections.selection_1() 
         information._isworking = False
         while information.encoding_working == True:
