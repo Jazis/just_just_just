@@ -1,0 +1,1185 @@
+
+
+
+/* Start:/bitrix/templates/modern/components/bitrix/system.auth.form/auth/style.css*/
+#login-form-window
+{
+	display:none;
+	background:#ffF;
+
+	z-index:10000;
+	position:absolute;
+	top:68px;
+	right:20px;
+	width:235px;
+	color: #000;
+	line-height:18px;
+	font-size:12px;
+	border:1px solid #3b5e6f;
+}
+
+
+.login-form-overlay
+{
+	display:none;
+	height:100%;
+	background:black;
+	left:0;
+	position:absolute;
+	right:0;
+	top:0;
+	width:100%;
+	z-index:98;
+	opacity: 0.3; 
+	-moz-opacity: 0.3; 
+	-khtml-opacity: 0.3; 
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+}
+
+#login-form-window a
+{
+	color:#3366cc !important;
+	text-decoration:underline;
+	font-size:11px;
+}
+
+#login-form-window form
+{
+	margin:0;
+	padding:0;
+}
+
+label.remember-text
+{
+	font-size:11px;
+	line-height:12px;
+}
+
+#close-form-window
+{
+	float:right;
+	cursor:pointer; cursor:hand;
+	background: url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/close.gif') right center no-repeat;
+	padding-right:15px;
+}
+
+#login-form-window-header
+{
+	padding:6px 10px;
+	font-size:11px;
+	background: #cfdfe6 url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/login-form-header-bg.gif') repeat-x;
+	margin-bottom:10px;
+	
+}
+
+div.auth-welcome
+{
+	font-size:12px;
+	color:#fff;
+	padding-top:4px;
+}
+
+div.auth-links
+{
+	font-size:11px;
+	margin-bottom:8px;
+	margin-top:8px;
+}
+
+div.auth-links span
+{
+	color:#81acc0;
+}
+
+div.auth-links a, div.auth-welcome a
+{
+	text-decoration:none;
+	color:#fff;
+}
+div.auth-welcome a
+{
+	padding:3px 1px 4px 8px;
+	border:none; 
+}
+div.auth-welcome a:hover, div.auth-welcome a.pressed
+{
+	padding:2px 0px 3px 7px;
+	border:1px solid #81acc0; 
+}
+div.auth-welcome div
+{
+	padding-right: 19px;
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/arrow.gif'); 
+	background-position:right center; 
+	background-repeat:no-repeat;
+	display:inline;
+}
+
+/* Popup menu */
+div.bx-popup-menu td, div.bx-popup-menu table, div.bx-popup-menu tr, div.bx-popup-menu tbody {color:black !important; border:none !important; border-spacing:0 !important; background:transparent !important; width:auto !important; font-weight:normal !important; letter-spacing:normal !important; font-variant:normal !important;font-style:normal !important; text-indent:0 !important; word-spacing:normal !important; vertical-align:middle !important; white-space:normal !important; letter-spacing:0 !important;text-decoration: none !important;table-layout:auto !important; text-align:left !important; padding:0px !important; margin:0px !important; height:auto !important; line-height:normal !important; font-size:medium !important;}
+div.bx-popup-menu td.popupmenu {border:1px solid #B6B6B6 !important; padding:1px !important; background:#FCFCFC url(/bitrix/themes/.default/images/menu_gutter.gif) repeat-y !important; width:100% !important;}
+td.popupmenu div.popupitem table{width:100% !important;}
+td.popupmenu div.popupitem {margin:1px; cursor:default;}
+td.popupmenu div.popupitemover {margin:0px; border:1px solid #AEB6C2; background-color:#CEDAEE !important;}
+td.popupmenu div.popupitem td.gutter {width:22px !important;}
+td.popupmenu div.popupitem td.arrow {width:10px !important; background:transparent url(/bitrix/themes/.default/images/menu_arrow.gif) 2px center no-repeat !important;}
+td.popupmenu div.popupitem td.item {padding:3px 7px 3px 9px !important; font-family:Verdana,Arial,sans-serif; font-size:11px !important; white-space:nowrap !important; color:black !important; line-height:normal !important; font-weight:normal !important;}
+td.popupmenu div.popupitem td.default {font-weight:bold !important; line-height:normal !important;}
+td.popupmenu div.popupitem td.disabled {color:#939393 !important;}
+td.popupmenu div.popupseparator {margin:1px 0px 1px 30px; background-color:#B6B6B6; height:1px; overflow:hidden;}
+td.popupmenu div.popupitem div.icon {width:22px; height:20px; background-position:center; background-repeat:no-repeat;}
+
+.auth-icon-active
+{
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/bp_anim.gif');
+	background-repeat:no-repeat;
+	height:13px;
+	padding-left:20px;
+	line-height:13px;
+	display:inline-block;
+}
+
+.auth-icon
+{
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/bp.gif');
+	background-repeat:no-repeat;
+	height:13px;
+	padding-left:15px;
+	line-height:13px;
+	display:inline-block;
+}
+.auth-button-message
+{
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/icon_my_messages.gif');
+	background-repeat:no-repeat;
+	height:17px;
+	width:17px;
+	
+}
+.auth-button-page
+{
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/icon_my_page.gif');
+	background-repeat:no-repeat;
+	height:17px;
+	width:17px;
+	
+}
+.auth-button-profile
+{
+	background-image:url('/bitrix/templates/modern/components/bitrix/system.auth.form/auth/images/icon_edit_profile.gif');
+	background-repeat:no-repeat;
+	height:17px;
+	width:17px;
+	
+}
+/* End */
+
+
+
+/* Start:/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/style.css*/
+/*Root ul element*/
+#horizontal-multilevel-menu
+{
+	margin:0;
+	padding:0;
+	background:#456eae url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/header_menu_bg.gif') repeat-x;
+	min-height:32px;
+	list-style:none;
+	font-size:12px;
+	float:left;
+	height:32px;
+}
+
+/*Other ul elements*/
+#horizontal-multilevel-menu ul
+{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+/*Links*/
+#horizontal-multilevel-menu a
+{
+	display:block;
+	padding:4px 10px 5px 10px;
+	text-decoration:none;
+	text-align:center;
+	font-size:12px;
+}
+
+#horizontal-multilevel-menu li
+{
+	float:left;
+}
+
+/*Root items*/
+#horizontal-multilevel-menu li a.root-item
+{
+	color:white;
+	font-weight:bold;
+	font-size:12px;
+	white-space:nowrap;
+	padding:7px 10px 9px;
+}
+
+#horizontal-multilevel-menu div.root-separator
+{
+	width:1px;
+	height:32px;
+	float:left;
+	background:#7695c3 url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/separator.gif') center top no-repeat;
+}
+
+/*Root menu selected*/
+#horizontal-multilevel-menu li a.root-item-selected
+{
+	background:#37598d url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/hover.gif') repeat-x;
+	color:white;
+	font-weight:bold;
+	font-size:12px;
+	padding:7px 10px 9px;
+	
+}
+
+/*Root items: hover*/
+#horizontal-multilevel-menu li:hover a.root-item, #horizontal-multilevel-menu li.jshover a.root-item
+{
+	background:#34578c url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/hover.gif') repeat-x;
+	color:white;
+	font-size:12px;
+	padding:7px 10px 9px;
+}
+
+/*Item-parents*/
+#horizontal-multilevel-menu a.parent
+{
+	background: url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/arrow.gif') center right no-repeat;
+}
+
+/*Denied items*/
+#horizontal-multilevel-menu a.denied
+{
+	background: url('/bitrix/templates/modern/components/bitrix/menu/horizontal_multilevel/images/lock.gif') center right no-repeat;
+}
+
+/*Child-items: hover*/
+#horizontal-multilevel-menu li li:hover, #horizontal-multilevel-menu li li.jshover
+{
+	background:#e5e9f0;
+	color:#fff;
+}
+
+/*Child-items selected*/
+#horizontal-multilevel-menu li li.item-selected
+{
+	background:#e5e9f0;
+	color:#fff;
+}
+
+/*Last item in subbox*/
+#horizontal-multilevel-menu li li.item-last
+{
+	border-bottom:none;
+}
+
+/*Sub-menu box*/
+#horizontal-multilevel-menu li ul
+{
+	position:absolute;
+	width:200px;
+	top:auto;
+	display:none;
+	z-index:500;
+	margin-top:-2px;
+	height:auto;
+	background:#f8fafc;
+	border:1px solid #a9b7c9;
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel-menu li li 
+{
+	width:100%;
+	border-bottom:1px solid #cdd4dd;
+}
+
+/*Item link*/
+#horizontal-multilevel-menu li ul a
+{
+	text-align:left;
+}
+
+#horizontal-multilevel-menu li.left-margin
+{
+	width:10px;
+}
+
+/*Items text color & size */
+#horizontal-multilevel-menu li a,
+#horizontal-multilevel-menu li:hover li a,
+#horizontal-multilevel-menu li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li a
+{
+	color:black;
+}
+
+/*Items text color & size: hover*/
+#horizontal-multilevel-menu li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover a,
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover a
+#horizontal-multilevel-menu li:hover li:hover li:hover li:hover li:hover li:hover a,
+#horizontal-multilevel-menu li.jshover li.jshover li.jshover li.jshover li.jshover li.jshover a
+{
+	color:black;
+}
+
+#horizontal-multilevel-menu li ul ul
+{
+	margin:-24px 0 0 197px;
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul ul
+{
+	display:none;
+
+	/*For IE7 only (http://murphy.cz/ie7-hover-ghosts-bug/#drop-down-menu-ghosts-demo)*/
+	position:static;
+	width:auto;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li li:hover ul,
+#horizontal-multilevel-menu li li.jshover ul,
+#horizontal-multilevel-menu li li li:hover ul,
+#horizontal-multilevel-menu li li li.jshover ul,
+#horizontal-multilevel-menu li li li li:hover ul,
+#horizontal-multilevel-menu li li li li.jshover ul,
+#horizontal-multilevel-menu li li li li li:hover ul,
+#horizontal-multilevel-menu li li li li li.jshover ul
+{
+	display:block;
+	
+	/*For IE7 only*/
+	position:absolute;
+	width:200px;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}
+/* End */
+
+
+
+/* Start:/bitrix/templates/modern/styles.css*/
+a {text-decoration: underline; color:#0c4797;}
+
+h1
+{
+	position:relative;
+	font-size:1.25em;
+	border-bottom:1px solid #e4e7e9;
+	padding-bottom:12px;
+	color:#072838;
+	margin:10px 0;
+}
+
+h2
+{
+	font-size:1.25em;
+}
+
+h3
+{
+	font-size:1.25em;
+	margin-top:0;
+	margin-bottom:5px;
+}
+
+h4
+{
+	font-size:1.25em;
+	border-bottom:1px solid #e4e7e9;
+	padding-bottom:8px;
+	margin-bottom:5px;
+	margin-top:8px;
+}
+
+hr
+{
+	padding: 0px;
+	margin:7px 0;
+	background-color: #e4e7e9;
+	color: #e4e7e9;
+	border: none;
+	height: 1px;
+	line-height: 1px;
+}
+
+small, .smalltext
+{
+	font-size:90%;
+}
+
+
+#header
+{
+	background-color: #5278b4;/*change*/
+}
+
+#header-separator
+{
+	background-color: #ffed73;/*change*/
+}
+
+#top-menu-section
+{
+	background-color:#456eae;/*change*/
+}
+
+.left-column-delimiter
+{
+	background-color:#c5d9f1;/*change*/
+}
+
+#footer
+{
+	background:#ecf0f7;
+}
+
+/*Data table*/
+table.data-table
+{
+	border:1px solid #bbcbda;
+	border-collapse: collapse;
+}
+
+/*Any cell*/
+table.data-table td
+{
+	border:1px solid #bbcbda;
+	border-left:none !important;
+	border-right:none !important;
+	background-color:#FFFFFF;
+	padding:6px 5px;
+}
+
+/*Head cell*/
+table.data-table thead td, table.data-table th, table.data-table thead th
+{
+	background-color:#dbe7f6;
+	font-weight:bold;
+	font-size:12px;
+	background-image:none;
+	border:1px solid #bbcbda;
+	padding:8px;
+	text-align:left;
+}
+
+/*Head cell selected*/
+table.data-table thead td.selected, table.data-table th.selected, table.data-table thead th.selected
+{
+	background-color:#edf6fc;
+}
+
+/*Body cell*/
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+}
+
+/*Selected cell*/
+table.data-table td.selected, table.data-table tr.selected td
+{
+	background-color:#f6f6f6;
+}
+
+/*Foot cell*/
+table.data-table tfoot td
+{
+	background-color:#edf6fc;
+	padding:4px;
+}
+
+/*End data table*/
+
+
+
+/*Data table events*/
+table.data-table-events
+{
+	margin-bottom:10px;
+}
+
+/*Any cell*/
+table.data-table-events td.body
+{
+	padding:10px 14px;
+}
+
+/*Head cell*/
+table.data-table-events td.header
+{
+	font-weight:bold;
+	font-size:14px;
+	border-top:9px solid #c5d9f1;/*change*/
+	background:url('/bitrix/templates/modern/images/table-header-separator.gif') bottom repeat-x;
+	padding:8px;
+	color:#072838;
+}
+/*End data table events*/
+
+
+
+/*Data table news*/
+table.data-table-news
+{
+	margin-bottom:10px;
+}
+
+/*Any cell*/
+table.data-table-news td.body
+{
+	padding:10px 14px;
+}
+
+/*Head cell*/
+table.data-table-news td.header
+{
+	font-weight:bold;
+	font-size:14px;
+	border-top:9px solid #ddf3fb;/*change*/
+	background:url('/bitrix/templates/modern/images/table-header-separator.gif') bottom repeat-x;
+	padding:8px;
+	color:#c30808;
+}
+/*End data table events*/
+
+
+/*Data table communication*/
+table.data-table-communication
+{
+	margin-bottom:10px;
+}
+
+/*Any cell*/
+table.data-table-communication td.body
+{
+	padding:10px 14px;
+}
+
+/*Head cell*/
+table.data-table-communication td.header
+{
+	font-weight:bold;
+	font-size:14px;
+	border-top:9px solid #f8eca8;/*change*/
+	background:url('/bitrix/templates/modern/images/table-header-separator.gif') bottom repeat-x;
+	padding:8px;
+	color:#072838;
+}
+/*End data table events*/
+
+/*table.data-table-communication a, table.data-table-news a, table.data-table-events a
+{
+	text-decoration: none;
+}*/
+
+
+/*Error & OK messages*/
+.errortext{color:red;}
+.notetext{color:green;}
+.starrequired{color:red;}
+
+/*News*/
+.news-date-time {color:#82929a}
+.intranet-date {color:#82929a}
+
+/*Tabs*/
+.sonet-user-menu-tabs-mltl li a b.p1 {background-image:url('/bitrix/templates/modern/images/tabs/tableft.gif');}
+.sonet-user-menu-tabs-mltl li a b.p2 {background-image:url('/bitrix/templates/modern/images/tabs/tab_bg.gif'); color:#717273; }
+.sonet-user-menu-tabs-mltl li a b.p3 {background-image:url('/bitrix/templates/modern/images/tabs/tabright.gif');}
+
+.sonet-user-menu-tabs-mltl li a.selected b.p1 {background-image:url('/bitrix/templates/modern/images/tabs/tableft-selected.gif');}
+.sonet-user-menu-tabs-mltl li a.selected b.p2 {background-image:url('/bitrix/templates/modern/images/tabs/tab_bg_selected.gif'); color:#000;}
+.sonet-user-menu-tabs-mltl li a.selected b.p3 {background-image:url('/bitrix/templates/modern/images/tabs/tabright-selected.gif');}
+
+/*Filter*/
+ul.bx-users-selector li.bx-selected {background-color: #dbe7f6; background-image: url('/bitrix/templates/modern/images/filter/filter_delimiter.gif');}
+div.bx-users-selector-filter {background-color: #dbe7f6;}
+ul.bx-users-selector {background-color: #bbcbda;}
+div.bx-users-selector-filter table.filter-table tfoot td {border-top-color: #dbe7f6;}
+
+table.bx-users-toolbar {background-color: #dbe7f6;border-color:#dbe7f6;}
+table.bx-users-toolbar td {border-color:#dbe7f6;}
+table.bx-users-toolbar td.bx-users-toolbar-delimiter {background-color: #99b9cd;}
+
+table.bx-users-toolbar .bx-users-selected {background-color: white;border-color:#6290a6; color:inherit;}
+div.bx-users-alphabet {background-color: #edf6fc;border-color:#99b9cd;color:#99b9cd;}
+
+div.bx-calendar-layout .bx-calendar-main-table td.bx-calendar-control {background-color:#dbe7f6;}
+div.bx-calendar-layout .bx-calendar-main-table td.bx-calendar-holiday {background-color:#edf6fc;}
+div.bx-calendar-layout tr.bx-calendar-currow td {background-color:#dbe7f6 !important}
+.bx-user-info-inner {border-top-color:#dbe7f6;}
+.bx-user-info {border-color:#bbcbda;}
+.bx-user-info-inner .bx-user-subtitle { background-color: #edf6fc;}
+
+/*WebDAV*/
+table.wd-menu {background-color: #dbe7f6;}
+table.wd-menu-inner div.controls a{border-color:#dbe7f6;}
+table.wd-menu-inner div.controls a:hover {border-color:#aebec5;background-color:#edf6fc;}
+table.wd-menu div.separator {border-left-color:#aebec5}
+
+table.webdav-form tr.header th, table.webdav-form tr.header2 th, table.webdav-form tfoot td {background-color:#edf6fc;}
+
+tr div.show-action a.action{border-color:#fff;}
+tr.selected div.show-action a.action{border-color:#f6f6f6;}
+
+/*Tasks*/
+table.its-menu {background-color: #dbe7f6;}
+table.its-menu-inner div.controls a{border-color:#dbe7f6;}
+table.its-menu-inner div.controls a:hover {border-color:#aebec5;background-color:#edf6fc;}
+table.its-menu div.separator {border-left-color:#aebec5}
+
+/*Forum menu*/ 
+div.forumtoolsection {display:none;}
+table.forum-menu {border-left-color:#bbcbda; border-top-color:#bbcbda;} 
+table.forum-menu td.forumtoolbar {background-color: #dbe7f6; border-color:#bbcbda #bbcbda #bbcbda #FFFFFF;border-top:none;border-left:none;}
+
+.forumtoolsection {border-color:#FFFFFF #bbcbda #bbcbda #FFFFFF; } 
+.forumtoolseparator {border-left-color: #bbcbda; border-right-color: #FFFFFF;}
+
+table.forum-menu a, table.forum-menu select, table.forum-menu input, table.forum-menu td {color:#333}
+
+/* menu popup */
+.forum-menu-hidden-in {border-color:#bbcbda;} 
+table.forum-menu-popup-table td, table.forum-menu-popup-table td a { color: black;} 
+table.forum-menu-popup-table td.forum-menu-popup, table.forum-menu-popup-table td.forum-menu-popup-hover {background-color: #dbe7f6; } 
+table.forum-menu-popup-table td.forum-group{background-color:#dbe7f6; color:#333;} 
+table.forum-menu-popup-table td.forum-menu-popup-hover {background-color: #edf6fc;} 
+div.forum-group{background-color:#F9FBF9; color:#333;} 
+
+/*Forum index and list*/ 
+table.forum-main {border-color: #bbcbda;} 
+table.forum-main td {background-color:#edf6fc;border-color:#bbcbda;} 
+table.forum-main th {background-color:#dbe7f6;border-color: #bbcbda;color: #333;} 
+
+div.forum-hr {background-color:#bbcbda}
+div.filter-check-hover {background-color:#dbe7f6}
+
+a.forum-button:link,a.forum-button:visited,a.forum-button:active,a.forum-button:hover {background: #dbe7f6;border-color: #bbcbda;color: #333;} 
+table.forum-main td.forum-group {background-color:#dbe7f6; color:#333;} 
+div.forum-title {border-color: #bbcbda; background-color: #dbe7f6 !important; color:#333; } 
+
+/*Forum messages*/ 
+table.forum-message td {background-color: #edf6fc;} 
+table.forum-message td.forum-message-user-info {background-color: #edf6fc;border-color: #bbcbda;} 
+table.forum-message td.border-top {border-color:#bbcbda;} 
+table.forum-message td.border-bottom {border-color:#bbcbda;} 
+
+table.forum-message .forum-message-posts, 
+table.forum-message .forum-message-status, 
+table.forum-message .forum-message-datereg, 
+table.forum-message .forum-message-datecreate {color:#333;} 
+
+a.forum-button-small,a.forum-button-small-vote,a.forum-button-small-unvote {background-color: #dbe7f6;border-color:#bbcbda;color: #333; }
+a.forum-button-small:hover,a.forum-button-small-vote:hover,a.forum-button-small-unvote:hover {color: #333; } 
+
+/*Forum statistics*/ 
+table.forum-stat th {background-color:#dbe7f6;border-color: #bbcbda;color: #333;} 
+table.forum-stat td {background-color:#edf6fc;border-color: #bbcbda;} 
+table.forum-stat .forum-attention{color: black;} 
+
+/*Post form*/ 
+table.forum-post-form {border-color: #bbcbda;} 
+table.forum-post-form td {background-color:#edf6fc;border-color:#bbcbda;} 
+table.forum-post-form th {background-color:#dbe7f6;border-color: #bbcbda;} 
+table.forum-smile {border-color: #bbcbda;} 
+table.forum-smile th {background-color:#dbe7f6;border-color: #bbcbda;} 
+
+/* Only for user-profile*/ 
+table.fuser-static th {background-color:#dbe7f6; border-color:#bbcbda;} 
+table.fuser-static td {background-color:#edf6fc; border-color:#bbcbda;} 
+
+/* Tab controls*/ 
+table.tabs {border-left-color:#bbcbda;} 
+table.tabs td.tab-indent-left {border-bottom-color:#bbcbda;} 
+table.tabs td.tab-indent-right {border-bottom-color:#bbcbda;} 
+table.tabs td.tab-container {border-color:#bbcbda; border-left: none;} 
+table.tabs td.tab-container-selected {border-color:#bbcbda; border-bottom-color:#F9FBF9; background-color:#F9FBF9;} 
+
+table.tabs table td.tab {border-top-color:#bbcbda;} 
+table.tabs table td.tab-selected {border-top-color:red;} 
+table.tabs table td.tab-hover {border-top-color:#bbcbda;} 
+
+/* Tab inside edit form */ 
+table.tab {border-color:#bbcbda;} 
+table.tab td {background-color:#edf6fc;}
+
+.forum-menu-hidden-in {max-height:100px;height:expression(this.scrollHeight > 100? "100px" : "auto");}
+table.forum-quote td, table.forum-code td {background-color:#dbe7f6; /*th*/border-color:#bbcbda;}
+
+table.forum-reviews-messages th {background-color:#dbe7f6;}
+table.forum-reviews-form, table.forum-reviews-form td, table.forum-reviews-form th {border: 1px solid #bbcbda;}
+table.forum-reviews-form th {background-color:#dbe7f6;}
+table.forum-reviews-form td {background-color:#edf6fc;}
+
+div.out {border-color:#bbcbda;}
+div.in {background-color:#dbe7f6;}
+div.forum-title, table.forum-title {background-color:#dbe7f6;border-color:#bbcbda;}
+div.forum-popup table.forum-popup {border-color:#bbcbda;}
+
+/*Support*/
+div.ticket-edit-message
+{
+	border-color: #bbcbda;
+}
+
+/*Blogs*/
+table.blog-table-post th, table.blog-blog-edit th, table.blog-user-table td.head, table.blog-table-post-comment th
+{
+	background-color:#dbe7f6;
+}
+
+
+table.blog-blog-edit td, table.blog-blog-edit-table-smiles, table.blog-table-post td, table.blog-table-post th, table.blog-blog-edit th,
+table.blog-user-table td.head, table.blog-user-table td, table.blog-group td, table.blog-category td, table.blog-comment-form th, table.blog-comment-form td,
+table.blog-table-post-comment td, table.blog-table-post-comment th
+{
+	border-color: #bbcbda;
+}
+
+.blog-post-date 
+{
+	color:#333;
+}
+
+
+.blogtoolblock {border-color:#bbcbda;}
+.blogtoolbar {background-color:#dbe7f6;border-color:#bbcbda;border-top:none;}
+.blogtoolsection {border-color:#bbcbda}
+.blog-tab-selected {background-color:#dbe7f6; color:#333;}
+.blogtoolseparator {border-left:1px solid #bbcbda;border-right:1px solid #dbe7f6;}
+
+
+table.gadgetholder td.gd-page-column0 .gdheader {border-top:9px solid #c5d9f1;}
+table.gadgetholder td.gd-page-column1 .gdheader {border-top:9px solid #ddf3fb;}
+table.gadgetholder td.gd-page-column2 .gdheader {border-top:9px solid #f8eca8;}
+table.gadgetholder td.gd-page-column0  {border-right:1px solid #ffed73; padding-right:10px;}
+table.gadgetholder td.gd-page-column1  {border-right:1px solid #ffed73; padding-right:10px;}
+
+/* End */
+
+
+
+/* Start:/bitrix/templates/modern/template_styles.css*/
+* {font-size: 100.01%;}
+
+html
+{
+	width:100%;
+	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	margin:0;
+	padding:0;
+	background:white;
+	font-size: 80.01%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#052635;
+}
+
+textarea
+{
+	font-size:14px;
+}
+
+input, select
+{
+	font-size:14px; 
+}
+
+
+#page-container
+{
+	margin:0 13px -36px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	min-width:850px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 840 ? "850px" : "auto");
+}
+
+#print-link-back
+{
+	display:none;
+	float:right;
+	padding:10px;
+}
+
+#header
+{
+	height:81px;
+	position:relative;
+	background-image:url('/bitrix/templates/modern/images/header-background.gif');
+	background-repeat:repeat-x;
+}
+
+#header-logo
+{
+	position:absolute;
+	top:0;
+	left:0;
+	height:81px;
+	width:481px;
+	background:url('/bitrix/templates/modern/images/header-logo.jpg') no-repeat;
+}
+
+#company-info
+{
+	height:81px;
+	width:400px;
+	position:relative;
+	background:url('/bitrix/templates/modern/images/header-logo.jpg') no-repeat;
+	padding-left:136px;
+	font-weight:bold;
+	font-size:14px;
+	color:white;
+}
+
+#company-default-logo
+{
+	padding-top:10px;
+}
+
+#company-logo
+{
+/*	background:url('/bitrix/templates/modern/images/logo.gif') center right no-repeat; */
+	width:90px;
+	height:100%;
+}
+
+#company-name-default
+{
+	padding-left:50px;
+	margin-top:3px;
+	font-size:13px;
+	color:white;
+	font-weight:bold;
+}
+
+#company-name
+{
+	position:absolute;
+	top:32px;
+	left:185px;
+}
+
+#auth
+{
+	position:absolute;
+	right:23px;
+	top:15px;
+	height:66px;
+	font-size:11px;
+	text-align:right;
+	width:600px;
+}
+
+#header-separator
+{
+	height:4px;
+	background-image:url('/bitrix/templates/modern/images/header-separator.gif');
+	background-repeat:repeat-x;
+	font-size:1px;
+}
+
+#top-menu-section
+{
+	height:32px;
+	background-image:url('/bitrix/templates/modern/images/topmenu-section-background.gif');
+	background-repeat:repeat-x;
+}
+
+#top-menu
+{
+	
+	margin-left:5px;
+}
+
+#top-menu-left-corner
+{
+	background:url('/bitrix/templates/modern/images/topmenu-left-corner.gif') left bottom no-repeat;
+	margin-right:150px;
+	height:32px;
+}
+
+#site-icons
+{
+	width:130px;
+	overflow:hidden;
+	float:right;
+	height:32px;
+	background:url('/bitrix/templates/modern/images/topmenu-right-corner.gif') right no-repeat;
+}
+
+a.favourite-icon, a.print-icon, a.sitemap-icon
+{
+	float: right;
+	width:20px;
+	height:32px;
+	margin-right:15px;
+}
+
+a.favourite-icon {background:url('/bitrix/templates/modern/images/icons/favourite.gif') no-repeat;}
+a.print-icon {background:url('/bitrix/templates/modern/images/icons/printer.gif') no-repeat;}
+a.sitemap-icon {background:url('/bitrix/templates/modern/images/icons/sitemap.gif') no-repeat;}
+
+#breadcumb-section
+{
+	margin-left:16px;
+}
+
+#navigation 
+{
+	padding:10px 0;
+	font-size:11px;
+	color:#7f7f7f;
+	margin-right:220px;
+}
+
+#navigation a
+{
+	text-decoration:none;
+	color:#7f7f7f;
+}
+
+#search
+{
+	float:right;
+	width:210px;
+	overflow:hidden;
+	text-align:right;
+	vertical-align:middle;
+}
+
+#search-main-page
+{
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	right:0;
+	width:250px;
+	text-align:right;
+}
+
+#search form
+{
+	margin:0;
+	padding:4px 5px 0 0;
+	height:100%;
+}
+
+#search-main-page form
+{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#search span.search-text, #search-main-page span.search-text
+{
+	font-size:12px;
+	font-weight:normal;
+	vertical-align:middle;
+}
+
+#search input.search-submit, #search-main-page input.search-submit
+{
+	height:21px;
+	vertical-align:middle;
+	width:22px;
+}
+
+#search input.search-field, #search-main-page input.search-field
+{
+	background:white;
+	color:#000000;
+	font-size:11px;
+	padding-left:5px;
+	vertical-align:middle;
+	width:115px;
+}
+
+#page-content
+{
+	font-size:0.9em;
+	padding:0 10px;
+}
+
+#main-page
+{
+	padding-bottom:15px;
+	margin:0 10px;
+}
+
+#main-table
+{
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+}
+
+#left-column
+{
+	width:200px;
+	padding-right:9px;
+	vertical-align:top;
+	border-right:1px solid #dbdbdb;
+	padding-bottom:15px;
+}
+
+#main-column
+{
+	padding-left:15px;
+	vertical-align:top;
+	width:100%;
+	padding-bottom:15px;
+}
+
+.left-column-delimiter
+{
+	height:9px;
+	font-size:1px;
+}
+
+#space-for-footer
+{
+	height:35px;
+}
+
+#footer
+{
+	height:35px;
+	overflow:hidden;
+	border-top:1px solid #cccccc;
+}
+
+#copyright
+{
+	float:left;
+	margin-left:19px;
+	padding-top:10px;
+	font-size:11px;
+}
+
+#footer-links
+{
+	float:right;
+	margin-right:19px;
+	padding-top:8px;
+}
+
+#footer-links a
+{
+	font-size:0.9em;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+td.main-page-left-column, td.main-page-center-column
+{
+	border-right:1px solid #dbdbdb;
+	padding-right:10px;
+}
+
+/*Ajax window*/
+div.waitwindow 
+{
+	background-color:#FCF7D1;
+	background-image:url('/bitrix/templates/modern/images/wait.gif');
+	background-position:10px center;
+	background-repeat:no-repeat;
+	border:1px solid #E1B52D;
+	color:black;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:11px;
+	padding:10px;
+	position:absolute;
+	width:170px;
+	z-index:10000;
+	text-align:center;
+}
+
+*{-moz-force-broken-image-icon:1 !important;}
+
+
+.gdheader {font-weight:bold; font-size:14px; padding:8px; color:#000; background:url('/bitrix/templates/modern/images/table-header-separator.gif') bottom repeat-x;}
+.gdparent {border: 0px solid #becfd8; position: relative; background-color: white;}
+
+.gdcorn, .gdbcorn
+{
+	border: 1px solid #E0E0E0
+	height:0px;
+	left:0px;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	width:0px;
+}
+
+a.gdremove, a.gdsettings, a.gdhide, a.gdshow, a.gdshow:hover, a.gdremove:hover, a.gdsettings:hover, a.gdhide:hover
+{
+	float:right; 
+	height:31px; 
+	top: 0px;
+	margin-top:-8px; 
+	margin-left:0px; 
+	position: relative;
+	background-position: 0px 0px;
+}
+
+a.gdsettings {background-image:url('/bitrix/templates/modern/images/hidn/01.gif'); width:16px; }
+a.gdhide {background-image:url('/bitrix/templates/modern/images/hidn/02.gif');width:18px; }
+a.gdremove {background-image:url('/bitrix/templates/modern/images/hidn/03.gif');width:20px; }
+.gdhided a.gdhide {background-image:url('/bitrix/templates/modern/images/hidn/04.gif');width:18px; background-position: 0px 0px;}
+
+a.gdsettings:hover {background-image:url('/bitrix/templates/modern/images/hidn/over_01.gif');width:16px; }
+a.gdhide:hover {background-image:url('/bitrix/templates/modern/images/hidn/over_02.gif');width:18px; }
+a.gdremove:hover {background-image:url('/bitrix/templates/modern/images/hidn/over_03.gif');width:20px; }
+.gdhided a.gdhide:hover {background-image:url('/bitrix/templates/modern/images/hidn/over_04.gif');width:18px; background-position: 0px 0px;}
+
+.gdnoparams {display:none;}
+
+.gdhided .gdcontent {display:none;}
+
+.gdoptions {padding: 4px; background-color: #E8E8E8;}
+.gdsettrow {margin: 4px; }
+
+/* End */

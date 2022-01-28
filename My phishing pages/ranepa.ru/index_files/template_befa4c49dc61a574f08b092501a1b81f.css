@@ -1,0 +1,1721 @@
+
+
+/* Start:/bitrix/templates/ranepa/components/bitrix/menu/ranepa-main-mob/style.css?1441183614579*/
+/* Left menu
+ul.left-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug
+}
+
+ul.left-menu li
+{
+	padding: 10px 16px;
+	background:#F5F5F5 url(/bitrix/templates/ranepa/components/bitrix/menu/ranepa-main-mob/images/left_menu_bg.gif) top repeat-x;
+}
+
+ul.left-menu li a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.left-menu li a:visited
+{
+	color:#BC262C;
+}
+
+ul.left-menu li a:hover
+{
+	color:#BC262C;
+}
+
+
+ul.left-menu li a.selected:link,
+ul.left-menu li a.selected:visited,
+ul.left-menu li a.selected:active,
+ul.left-menu li a.selected:hover
+{
+	color:#FC8D3D;
+}
+*/
+
+
+
+/* End */
+
+
+/* Start:/bitrix/templates/ranepa/components/bitrix/system.auth.form/ranepa-user/style.min.css?1441203155424*/
+div.bx-system-auth-form span.bx-auth-secure{background-color:#fffae3;border:1px solid #dedbc8;padding:2px;display:inline-block;vertical-align:bottom;margin-top:-1px}div.bx-system-auth-form div.bx-auth-secure-icon{background-image:url(/bitrix/templates/ranepa/components/bitrix/system.auth.form/ranepa-user/images/sec.png);background-repeat:no-repeat;background-position:center;width:19px;height:18px}div.bx-system-auth-form div.bx-auth-secure-unlock{background-image:url(/bitrix/templates/ranepa/components/bitrix/system.auth.form/ranepa-user/images/sec-unlocked.png)}
+/* End */
+
+
+/* Start:/bitrix/js/socialservices/css/ss.min.css?15169563284566*/
+.bx-ss-icon{background-image:url('/bitrix/js/socialservices/css/icons_v5.png');width:16px;height:16px;background-repeat:no-repeat}.openid{background-position:0 -192px}.yandex{background-position:0 0}.openid-mail-ru{background-position:0 -48px}.livejournal{background-position:0 -16px}.liveinternet{background-position:0 -128px}.blogger{background-position:0 -144px}.rambler{background-position:0 -160px}.liveid{background-position:0 -176px}.facebook{background-position:0 -32px}.twitter{background-position:0 -96px}.vkontakte{background-position:0 -80px}.mymailru{background-position:0 -64px}.google{background-position:0 -112px}.google-plus{background-position:0 -112px}.odnoklassniki{background-position:0 -208px}.bitrix24{background-position:0 -378px}.dropbox{background-position:0 -504px}.box{background-position:0 -520px}.office365{background-position:0 -559px}.bx-ss-button{display:inline-block;background-image:url('/bitrix/js/socialservices/css/icons_v5.png')!important;width:87px!important;height:21px!important;background-repeat:no-repeat;vertical-align:middle!important}.liveid-button{background-position:0 -334px!important}.facebook-button{background-position:0 -224px!important}.twitter-button{background-position:0 -290px!important}.vkontakte-button{background-position:0 -268px!important}.mymailru-button{background-position:0 -246px!important}.google-button{background-position:0 -312px!important}.odnoklassniki-button{background-position:0 -356px!important}.bitrix24net-button{background-position:0 -416px!important}.bitrix24net-button-ru,.bitrix24net-button-kz{background-position:0 -394px!important}.bitrix24net-button-ua{background-position:0 -438px!important}.dropbox-button{background-position:0 -482px!important}.box-button{background-position:0 -537px!important}.yandex-button{background-position:0 -460px!important}.office365-button{background-position:0 -576px!important}td.to_twitter{text-align:center!important}div.bx-auth{max-width:600px;margin-top:12px;margin-bottom:10px}div.bx-auth form{padding:0;margin:0}div.bx-auth-line{border-bottom:1px solid #e3e3e3;padding-bottom:10px}div.bx-auth-title{font-size:140%;border-bottom:solid 2px #e3e3e3;padding-bottom:12px}div.bx-auth-note{margin:18px 0 6px 0}div.bx-auth-services{padding:0;margin:0;overflow:hidden;zoom:1}div.bx-auth-services div{display:block;float:left;margin:4px 6px 0 0;width:170px}div.bx-auth-services a{display:inline-block;margin:1px;padding:4px 4px 4px 4px;text-decoration:none;color:#646464;outline:0}div.bx-auth-services a:hover{margin:0;border:1px solid #d9d9d9;text-decoration:none!important}div.bx-auth-services a.bx-ss-selected{margin:0;border:1px solid #d9d9d9;background-color:#ebebeb}div.bx-auth-services i{display:inline-block;margin:0;margin-right:4px;vertical-align:middle;cursor:pointer}div.bx-auth-services b{vertical-align:middle;font-weight:bold;font-size:12px;font-family:Tahoma,Verdana,Arial,sans-serif}div.bx-auth-service-form{color:black;background-color:#eee;border-bottom:solid 1px #d6d6d6;margin-top:1px;padding:8px;vertical-align:middle;font-size:12px}div.bx-auth-service-form span,div.bx-auth-service-form input{vertical-align:middle}div.bx-auth-service-form input.button{position:relative;left:1px}div.bx-auth-service-form span.bx-ss-icon{display:inline-block;margin-right:6px}span.bx-spacer{display:inline-block;width:8px}span.bx-spacer-vert{display:inline-block;height:10px}span.bx-spacer-vert25{display:inline-block;height:25px}div.bx-auth-serv-icons a{display:inline-block;margin:1px;text-decoration:none;color:#646464;outline:0}div.bx-auth-serv-icons a:hover{margin:0;border:1px solid #d9d9d9}div.bx-auth-serv-icons i{margin:3px;display:inline-block;vertical-align:middle;cursor:pointer}div.bx-auth-lbl{margin-top:8px;margin-bottom:4px}div.bx-auth-float{padding-left:15px;padding-right:15px;font-size:100%}div.bx-sonet-profile-field-socserv{line-height:15px!important}div.bx-auth-form{width:510px!important}textarea.ss-text-for-message-default{width:300px;height:130px;color:grey;font-weight:lighter}textarea.ss-text-for-message{margin-top:5px}td.bx-ss-soc-serv{font:bold 12px/15px "Helvetica Neue",Helvetica,Arial,sans-serif}td.bx-ss-soc-serv i{vertical-align:-25%}div.bx-taimen-socserv-div{padding-bottom:9px;padding-left:50px}a.ss-socserv-setup-link{padding-left:10px;color:grey!important;text-decoration:underline}.ss-text-without-border{padding-left:5px;border:0;background:#f8fafb;color:#6286bb;font-style:italic}.bx-ss-timeman-header-div{padding-bottom:10px}td.bx-ss-soc-serv-setup{white-space:pre-line;width:300px;font-size:75%}a.bx-ss-soc-serv-setup-link{text-decoration:underline!important}
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/sale.basket.basket.line/templates/.default/style.min.css?15172128603567*/
+.bx-basket-block{font-size:12px;padding-bottom:5px;white-space:nowrap;position:relative;padding-left:20px}.bx-basket-block>.fa{color:#97a1ab;width:12px;position:absolute;left:0;top:3px}.bx-basket-block a{color:#039be5;border-bottom:1px dashed;margin-right:10px}.bx-basket-block a:hover{text-decoration:none;border-bottom-color:transparent}@media(min-width:768px){.bx-basket-fixed{width:200px;position:fixed;z-index:998;background:#fff;padding-top:10px;border:1px solid #f0f0f0;box-shadow:0 7px 10px rgba(0,0,0,0.15);border-radius:1px;overflow:hidden}.bx-basket-fixed.top{top:10px}.bx-basket-fixed.right{right:10px}.bx-basket-fixed.bottom{bottom:10px}.bx-basket-fixed.left{left:10px}.bx-basket-fixed.bx-max-height{top:10px;bottom:10px}}@media(max-width:767px){.bx-basket-fixed{position:fixed;z-index:998;background:#fff;padding-top:10px;border:1px solid #f0f0f0;box-shadow:0 7px 10px rgba(0,0,0,0.15);border-radius:1px;overflow:hidden;bottom:0;left:0;right:0}.bx-basket-item-list{display:none}}.bx-basket-fixed .bx-basket-block{margin-left:10px}.bx-basket-item-list{position:relative;padding-bottom:20px;border-top:1px solid #f7f7f7;overflow:hidden}.bx-opener .bx-basket-item-list{padding-bottom:75px}.bx-max-height .bx-basket-item-list{position:absolute;bottom:0;left:0;right:0}.bx-closed .bx-basket-item-list{height:20px;overflow:hidden}.bx-basket-item-list-action{cursor:pointer;background:#f7f7f7;position:absolute;bottom:0;right:0;left:0;z-index:120;height:20px;line-height:14px;vertical-align:middle;text-align:center;font-size:12px;color:#4f4f4f;padding:3px 0}.bx-basket-item-list-button-container{text-align:center;position:absolute;bottom:20px;border-top:1px solid #f7f7f7;padding:10px 0;background:#fff;left:0;right:0}.bx-basket-item-list-button-container a.btn{color:#ddd;text-decoration:none}.bx-basket-item-list-button-container a.btn:hover,.bx-basket-item-list-button-container a.btn:active{color:#fff}.bx-basket-item-list-container{overflow-y:auto;max-height:100%}.bx-basket-item-list-item{padding-top:15px;position:relative;padding-right:10px;padding-left:10px;margin-bottom:15px;border-bottom:1px solid #f7f7f7}.bx-basket-item-list-container .bx-basket-item-list-item:last-child{border-bottom:0;margin-bottom:0}.bx-basket-item-list-item-status{font-weight:bold;padding:3px;background:#ebebeb;margin:0 10px 20px;line-height:16px;font-size:13px;border-radius:3px;text-align:center;white-space:normal}.bx-basket-item-list-item-img{text-align:center;position:relative;padding-bottom:5px}.bx-basket-item-list-item-img img{max-width:90px;height:auto;border:1px solid #e6e6e6}.bx-basket-item-list-item-name{padding-bottom:5px}.bx-basket-item-list-item-name a{font-size:13px;color:#3f3f3f;text-decoration:none;white-space:normal;line-height:16px}.bx-basket-item-list-item-remove{position:absolute;right:10px;top:-7px;width:20px;height:20px;cursor:pointer;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAMAAADzjKfhAAAAJFBMVEX///8yMjI6Ojpvb29wcHCEhISHh4eIiIiqqqqtra2wsLCxsbE3yvJ6AAAAAXRSTlMAQObYZgAAACxJREFUCNcFwYEBgCAMA7BYUMb2/78m9sXdJtfNMHkzcJ4DlS9FpXXKavT6ARdgANGqCJ38AAAAAElFTkSuQmCC) no-repeat center;opacity:.5}.bx-basket-item-list-item-remove:hover{opacity:.7}.bx-basket-item-list-item-price-block{padding-bottom:5px;font-size:12px}.bx-basket-item-list-item-price{display:inline-block;margin-right:5px}.bx-basket-item-list-item-price-old{display:inline-block;margin-right:5px;text-decoration:line-through;color:#b0b0b0}.bx_cart_login_top .bx-hdr-profile a{text-decoration:none}.bx_cart_login_top .bx-hdr-profile{line-height:1.44em}
+/* End */
+
+
+/* Start:/bitrix/templates/ranepa/components/bitrix/menu/ranepa-header-menu/style.css?15186138493883*/
+/**Top menu**/
+#horizontal-multilevel-menu,#horizontal-multilevel-menu ul
+{
+	margin:0; padding:0;
+	min-height:27px;
+	width:100%;
+	list-style:none;
+	font-size:11px;
+	float:left;
+	/*font-size:90%*/
+}
+
+#horizontal-multilevel-menu
+{
+
+}
+
+#horizontal-multilevel-menu>li:nth-child(3) {max-width: 225px;}
+
+
+/*Links*/
+#horizontal-multilevel-menu a
+{
+	display:block;
+	padding:5px 10px;
+	/*padding:0.3em 0.8em;*/
+	text-decoration:none;
+	text-align:left;
+}
+
+#horizontal-multilevel-menu li
+{
+	float:left;
+}
+
+
+/*Item-parents*/
+#horizontal-multilevel-menu a.parent
+{}
+
+#horizontal-multilevel-menu a.parent:after{
+	content: "\f0da";
+	font-family: 'FontAwesome';
+    color: #951a1d;
+    margin-left: 5px;
+}
+
+/*Denied items*/
+#horizontal-multilevel-menu a.denied
+{
+	background: url(/bitrix/templates/ranepa/components/bitrix/menu/ranepa-header-menu/images/lock.gif) center right no-repeat;
+}
+
+
+/*Sub-menu box*/
+#horizontal-multilevel-menu li ul
+{
+	position:absolute;
+	/*top:-999em;*/
+	top:auto;
+	display:none;
+	z-index:500;
+
+	height:auto;
+	/*width:12em;*/
+	width:250px;
+	padding-top: 12px;
+}
+
+/*Sub-menu item box*/
+#horizontal-multilevel-menu li li
+{
+	width:100%;
+}
+
+/*Item link*/
+#horizontal-multilevel-menu li ul a
+{
+	text-align:left;
+	font-size: 14px;
+    line-height: 15px;
+    padding: 7px 12px;
+    color: #000;
+	background:#F5F5F5;
+}
+#horizontal-multilevel-menu>li>ul:before{
+	content: "\f0d8";
+    font-size: 40px;
+    position: absolute;
+    top: -3px;
+    left: 0px;
+    margin-left: 10px;
+    color: #F5F5F5;
+    font-family: 'FontAwesome';
+}
+
+
+#horizontal-multilevel-menu li ul ul
+{
+	margin:-40px 0 0 250px;
+	/*margin:-1.93em 0 0 11.6em;*/
+}
+
+#horizontal-multilevel-menu li:hover ul ul,
+#horizontal-multilevel-menu li.jshover ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul,
+#horizontal-multilevel-menu li:hover ul ul ul ul ul,
+#horizontal-multilevel-menu li.jshover ul ul ul ul ul
+{
+	/*top:-999em;*/
+	display:none;
+}
+
+#horizontal-multilevel-menu li:hover ul,
+#horizontal-multilevel-menu li.jshover ul,
+#horizontal-multilevel-menu li li:hover ul,
+#horizontal-multilevel-menu li li.jshover ul,
+#horizontal-multilevel-menu li li li:hover ul,
+#horizontal-multilevel-menu li li li.jshover ul,
+#horizontal-multilevel-menu li li li li:hover ul,
+#horizontal-multilevel-menu li li li li.jshover ul,
+#horizontal-multilevel-menu li li li li li:hover ul,
+#horizontal-multilevel-menu li li li li li.jshover ul
+{
+	/*z-index:1000;
+	top:auto;*/
+	display:block;
+}
+
+div.menu-clear-left
+{
+	clear:left;
+}
+
+#horizontal-multilevel-menu>li {
+    max-width: 200px;
+}
+
+#horizontal-multilevel-menu>li:before{
+	content: "\f0d7";
+    font-size: 18px;
+    position: absolute;
+    top: -1px;
+    font-family: 'FontAwesome';
+}
+#horizontal-multilevel-menu>li:hover:before{
+	content: "\f0d8";
+    font-size: 18px;
+    position: absolute;
+    top: -1px;
+    font-family: 'FontAwesome';
+    color: #951a1d;
+}
+
+#horizontal-multilevel-menu>li>a{
+	padding: 0px 30px 0px 15px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', sans-serif;
+    margin-bottom: 15px;
+    min-height: 44px;
+	max-width:100%;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.bx-breadcrumb{
+	margin: 0;
+}
+@media(max-width: 1570px){
+#horizontal-multilevel-menu>li {
+    max-width: 200px;
+}
+div#menu {
+    width: 100%;
+}
+#menubar {
+    float: right;
+    width: 100%;
+}
+#horizontal-multilevel-menu>li{
+	width: 19%;
+	max-width: none;
+}
+#horizontal-multilevel-menu>li>a{
+	box-sizing: content-box;
+    width: 155px;
+}
+#horizontal-multilevel-menu>li:nth-child(3)>a {
+    width: 178px;
+}
+#horizontal-multilevel-menu>li:nth-child(3) {
+	width: calc(19% + 37px);
+	max-width: none;
+}
+#horizontal-multilevel-menu>li:last-child {
+	width: calc(19% - 37px);
+}
+}
+/* End */
+
+
+/* Start:/bitrix/templates/ranepa/components/bitrix/breadcrumb/ranepa-nav/style.css?1444998954672*/
+.bx-breadcrumb {
+	margin: 10px 0;
+}
+.bx-breadcrumb i {
+	color: #b5bdc2;
+	line-height: 13px;
+	font-size: 12px;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.bx-breadcrumb .bx-breadcrumb-item {
+	float: left;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	line-height: 13px;
+	vertical-align: middle;
+	margin-right: 4px;
+}
+.bx-breadcrumb .bx-breadcrumb-item span {
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+}
+.bx-breadcrumb .bx-breadcrumb-item a {border-bottom: none;}
+.bx-breadcrumb .bx-breadcrumb-item a:hover span {color: #951a1d;}
+.bx-breadcrumb {
+    border-bottom: 1px solid #eef0f1;
+    margin-bottom: 10px;
+}
+/* End */
+
+
+/* Start:/bitrix/templates/ranepa/styles.css?144182791429*/
+@import "/bitrix/templates/ranepa/experement.css" all;
+/* End */
+
+
+/* Start:/bitrix/templates/ranepa/template_styles.css?153261635429590*/
+* {
+    outline: none;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+body {
+    font: normal 16px/18px 'Arial Narrow', sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+    cursor: default;
+    margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+    display: block;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #951a1d;
+}
+
+img {
+    vertical-align: baseline;
+}
+form, textarea {
+    margin: 0;
+}
+::selection {
+    background: #39f;
+    color: #fff;
+}
+.bx-breadcrumb-item{
+    display: none;
+}
+.mm-opening{
+    overflow-y: hidden;
+}
+.module {
+    position: relative;
+}
+#headerbar .module {
+    margin-right: 0;
+    float: right;
+}
+.deepest > *:last-child {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.menu-dropdown, .menu-dropdown .level1, .menu-dropdown .level1 > span {
+    float: left;
+}
+/* HEADER */
+
+#mobilemenu.close{
+    display: none;
+}
+.mobilemenu {
+    display: none;
+}
+.topmenu .menu-dropdown li.parent a.level1, .topmenu .menu-dropdown li.parent span.level1 {
+    padding: 0px 14px 0px 22px;
+    line-height: 32px;
+    background: url(/bitrix/templates/ranepa/images/main_arrow.png) no-repeat 0px 13px;
+}
+.topmenu .menu-dropdown li.parent:hover a.level1, .topmenu .menu-dropdown li.parent:hover span.level1 {
+    background: url(/bitrix/templates/ranepa/images/main_arrow.png) no-repeat 0px -60px;
+    /*color: #fff;*/
+    color: #951a1d;
+}
+.topsite a, .topsite a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.topmenu .menu-dropdown li.level1 a.level1, .topmenu .menu-dropdown span.level1 {
+    color: #828282;
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', sans-serif;
+}
+.menu-dropdown li.level2 a, .menu-dropdown li.level3 a, .menu-dropdown li.level2 span.level2, .menu-dropdown li.level3>span {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 7px 12px;
+}
+.menu-dropdown .dropdown {
+    top: 30px;
+    left: -20px;
+}
+.menu-dropdown .dropdown {
+    top: 30px;
+    left: -20px;
+    border-top: 0px solid #DDD;
+    padding-top: 13px;
+    background: url(/bitrix/templates/ranepa/../images/roll_up_arrow.png) no-repeat 13px 0px;
+    z-index: 888 !important;
+}
+.menu-dropdown .dropdown {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 100;
+    width: 300px;
+}
+.menu-dropdown .column {
+    padding: 10px 0px;
+    background: #f4f4f4;
+}
+.menu-dropdown li:hover .dropdown, .menu-dropdown li.remain .dropdown {
+    display: block;
+}
+.menu, .menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.wrapper {
+    max-width: 1450px;
+    margin: auto;
+}
+#header {
+    position: relative;
+    height: 100px;
+}
+#logo, #logo > img, #menu {
+    float: left;
+}
+#logo > img {
+    margin-top: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.topsite {
+    background: #787878;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+}
+#headerbar {
+    float: right;
+    margin-top: 14px;
+}
+.top_right>* {
+    float: right;
+    margin-top: 14px;
+}
+.qs {
+    width: 60px;
+    height: 32px;
+}
+.qs_box {
+    position: absolute!important;
+    right: 0;
+    top: 68px;
+}
+.qs img {
+    max-width: 100%;
+}
+.top_right {
+    float: right;
+    width: 77%;
+}
+#search{
+	float: right;
+}
+div.search {
+    background: #f5f5f5;
+    padding: 0px 5px 0px 10px;
+    height: 32px;
+    line-height: 32px;
+    margin-left: 5px;
+}
+.top_right .search {
+    width: 224px;
+}
+.search_input {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important;
+    border: 0px !important;
+    background: none !important;
+    line-height: 32px !important;
+    text-transform: uppercase;
+    color: #828282 !important;
+    font-size: 14px;
+    height: 32px !important;
+    padding: 0px !important;
+    display: block;
+    float: left;
+    font-family: 'Arial Narrow', sans-serif;
+    width: 120px;
+}
+.button_search {
+    display: block;
+    border: 0px;
+    background: url(/bitrix/templates/ranepa/images/search.png) no-repeat center center;
+    width: 30px;
+    height: 32px;
+    float: right;
+    text-indent: -1000px;
+    cursor: pointer;
+}
+.eye {
+    width: 60px;
+    height: 32px;
+    background: #a8a8a8;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 19px;
+}
+.eye:hover {
+    background: #951a1d;
+}
+.lang_box {
+    display: none;
+}
+.lang_box ul {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 19px;
+    list-style-type: none;
+}
+.lang_box ul li {
+    height: 32px;
+    display: block;
+    float: left;
+    width: 40px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px 0px 0px 1px;
+}
+.lang_box .lang-active a, .lang_box ul li a:hover {
+    color: #fff;
+    background: #951a1d;
+}
+.lang_box ul li a {
+    display: block;
+    height: 32px;
+    width: 40px;
+    line-height: 32px;
+    color: #9e9e9e;
+    background: #f5f5f5;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+}
+.module._menu.topmenu.deepest {
+    float: left;
+}
+.menu-dropdown li.level1 a.level1:hover {
+    color: #951a1d;
+}
+.menu-dropdown li {
+    position: relative;
+}
+.topmenu .menu-dropdown li.level1.parent {
+    z-index: 4;
+}
+.topmenu .menu-dropdown li.level1 {
+    margin: 0px;
+    padding: 0px;
+}
+#menubar {
+    float: left;
+    margin-top: 15px;
+    /*width: 100%;*/
+}
+#menu {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#menubar .menu-dropdown li.level1 a.level1, #menubar .menu-dropdown li.level1 span.separator.level1 {
+    padding: 0px 90px 0px 15px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    font-family: 'Arial Narrow', sans-serif;
+}
+#menubar li.level1.parent a.level1, #menubar .menu-dropdown li.level1.parent span.separator.level1 {
+    background: url(/bitrix/templates/ranepa/../images/4_arrow.png) no-repeat 0px 5px;
+    margin-bottom: 15px;
+}
+#menubar li.level1.parent:hover a.level1, #menubar .menu-dropdown li.level1.parent:hover span.separator.level1 {
+    background: url(/bitrix/templates/ranepa/../images/4_arrow.png) no-repeat 0px -140px;
+}
+#menubar span.separator.level1.parent {
+    width: 125px;
+    padding-right: 100px;
+}
+
+/* AUTH */
+#lk-user-name{
+    width: 240px;
+    float: right;
+    text-align: right;
+    padding-top: 6px;
+    color: #951a1d;
+}
+#lk-user-name span{
+    border-bottom: 1px dashed #951a1d;
+}
+#logout {
+    width: 60px;
+    height: 32px;
+    background: url(/bitrix/templates/ranepa/images/exitga.png) no-repeat rgb(245, 245, 245) center;
+    background-size: contain;
+    background-color: #a8a8a8;
+    cursor: pointer;
+    margin-left: 19px;
+    border: none;
+}
+#logout:hover {
+    background-size: contain;
+    background-color: #951a1d;
+    border: none;
+}
+#login {
+    width: 60px;
+    height: 32px;
+    background: url(/bitrix/templates/ranepa/images/loging.png) no-repeat rgb(245, 245, 245) center;
+    background-size: contain;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 19px;
+}
+#login:hover {
+    background: url(/bitrix/templates/ranepa/images/loginw.png) no-repeat #951a1d center;
+    background-size: contain;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 19px;
+}
+#login .bx-system-auth-form.open {
+    display: block;
+}
+#login .bx-system-auth-form {
+    display: none;
+    position: fixed;
+    top: 200px;
+    left: 32%;
+    z-index: 100;
+    padding: 10px 0px;
+    font-size: 19px;
+}
+#login .bx-system-auth-form ul{
+    margin-top: 3px;
+    padding-left: 278px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    width: 465px;
+}
+#login .bx-system-auth-form form {
+    background: #ffffff;
+    width: 660px;
+    padding-top: 30px;
+}
+.bx-system-auth-form li {
+    color: #000;
+    text-decoration: none;
+    font-family: 'Arial Narrow', sans-serif;
+    line-height: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    list-style-type: none;
+}
+.bx-system-auth-form input[type="submit"] {
+    width: 190px;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'MyriadPro-Light';
+    background: #941a1d;
+    margin: 0;
+    margin-bottom: 26px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+.bx-system-auth-form input[type="submit"]:hover {
+    color: #fff;
+    background: #000;
+}
+.bx-auth-lbl, .bx-auth-serv-icons {
+    display: none;
+}
+.bx-system-auth-form tbody tr td {
+    padding-left: 20px;
+    padding-top: 12px;
+}
+.bx-system-auth-form input[type="text"], .bx-system-auth-form input[type="password"] {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px;
+    background-color: #efefef;
+    color: #000000;
+    font-size: 24px;
+    border: none;
+    padding-left: 2%;
+    margin: auto;
+    margin-top: 7px;
+    padding-right: 2%;
+    width: 590px;
+    border-radius: 6px;
+}
+/* MAP */
+.map, .plan-univer {
+    display: none;
+    position: fixed;
+    width: 40%;
+    height: 570px;
+    top: 200px;
+    left: 30%;
+    z-index: 100;
+}
+.plan-univer {
+    background: url(/bitrix/templates/ranepa/images/map-rus-kpp.jpg) no-repeat rgb(245, 245, 245) center;
+    background-size: contain;
+}
+.map.open, .plan-univer.open {
+    display: block;
+}
+/* DARKNESS */
+.active.dark:before{
+    content: "";
+    width: 100%;
+    background: rgba(0, 0, 0, 0.43);
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+.topsite.active.dark:before{
+    height: 146px;
+}
+.ranepa-top-title.active.dark:before{
+    height: 91px;
+}
+/* FOOTER */
+.width100 {
+    width: 100%;
+}
+.module.mod-box.press_box.wrapper.clearfix.deepest {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    /* justify-content: space-evenly; */
+    justify-content: left;
+}
+.press_box h3.module-title,
+.ranepa-top-title {
+    margin: 35px auto 40px auto !important;
+    color: #000000;
+    font-size: 48px;
+    line-height: 48px;      
+    font-family: 'MyriadPro-Light';
+    font-weight: normal;
+}
+.all_contant {
+    position: absolute;
+    top: 56px;
+    left: 199px;
+    color: #951a1d;
+    font-size: 14px;
+    text-decoration: underline;
+    line-height: 15px;
+    font-family: 'Arial Narrow', sans-serif;
+    display: inline-block;
+    max-width: 100%;
+    cursor: pointer;
+}
+a[data-lightbox] {
+    display: inline-block;
+    max-width: 100%;
+}
+.all_contant_corp {
+    left: 300px;
+}
+.press_list {
+    width: 260px;
+    height: auto;
+    border-top: 1px solid #959595;
+    float: left;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #666666;
+    position: relative;
+}
+.press_list .name_press {
+    font-family: 'MyriadPro-Bold';
+    font-size: 16px;
+    text-align: left;
+    color: #333;
+    line-height: 45px;
+    border-bottom: 1px solid #959595;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.phone_press_v {
+    display: inline-block;
+}
+.phone_press_v_1 {
+    display: inline-block;
+    padding-left: 69px;
+}
+.phone_press {
+    display: inline-block;
+    width: 65px;
+}
+.mail_link {
+    color: #000;
+    text-decoration: none;
+}
+.press_list.last_box {
+    margin-right: 0px;
+    margin-bottom: 65px;
+}
+.grid-box {
+    float: left;
+}
+.grey_line_box {
+    height: auto;
+    background: #787878;
+    line-height: 36px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    font-family: 'MyriadPro-Light';
+}
+.clearfix:after, .grid-block:after, .deepest:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after, .grid-block:before, .grid-block:after, .deepest:before, .deepest:after {
+    content: "";
+    display: table;
+}
+.ranepa-grid-block {
+    width: 100%;
+    height: auto;
+    background: #951a1d url(/bitrix/templates/ranepa/images/top_side_bg.png) no-repeat center top;
+    background-size: cover;
+    padding: 25px 0;
+    margin-bottom: 17px;
+}
+.ranepa-grid-block-title {
+    font-size: 50px;
+    line-height: 50px;
+    color: #ffffff;
+    font-family: 'MyriadPro-Light';
+    text-transform: uppercase;
+}
+#footer {
+    position: relative;
+    height: auto;
+    padding-bottom: 45px;
+}
+#totop-scroller {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    margin: 0px auto;
+    z-index: 1;
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'MyriadPro-Light';
+    text-align: center;
+}
+.copy_box {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #919191;
+    font-family: 'Arial Narrow', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    height: auto;
+}
+.footmenu {
+    width: 20%;
+    float: left;
+    margin-top: 45px!important;
+    margin-bottom: 30px!important;
+}
+.footmenu h3.module-title {
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    font-family: 'MyriadPro-Bold';
+    margin: 0px 20px 15px 0px;
+    text-transform: uppercase;
+    height: 36px;
+}
+.footmenu li {
+    display: block !important;
+    clear: both;
+    border: 0px !important;
+    background: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.footmenu li a {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0px 0px 9px 0px;
+    color: #666666;
+    font-family: 'MyriadPro-Light';
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+}
+.copy_box {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #919191;
+    font-family: 'Arial Narrow', sans-serif;
+    line-height: 40px;
+    font-size: 14px;
+    height: auto;
+}
+.right_copy {
+    float: right;
+    margin-top: 0px;
+    text-align: left;
+    width: 46%;
+    font-size: 14px;
+}
+.left_copy {
+    float: left;
+    margin-top: 0px;
+    text-align: right;
+    width: 46%;
+    font-size: 14px;
+}
+.mm-opening .mobilemenu_back {
+    display: block;
+}
+.mobilemenu_back {
+    display: none;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    opacity: 0.5;
+}
+/*access*/
+.access {
+    background-color: #efefef;
+    color: #000;
+    font-size: 17px;
+    height: 46px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: none;
+}
+.cecutient .access {
+    display: block;
+}
+.access .menucenter {
+    margin: 0 auto;
+    padding-top: 13px;
+    height: 33px;
+    width: 100%;
+    max-width: 759px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+.rmenu {
+    width: 30%;
+    margin-top: 0;
+}
+.rmenu dt {
+    font-family: arial;
+    font-weight: bold;
+    display: inline-block;
+    float: left;
+}
+.a-colors a {
+    height: 31px;
+    margin-left: 5px;
+    display: inline;
+    float: left;
+    background-image: url(/bitrix/templates/ranepa/images/colors.png);
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    width: 26px;
+}
+.a-fontsize a {
+    height: 31px;
+    margin-left: 5px;
+    display: inline;
+    float: left;
+    background-image: url(/bitrix/templates/ranepa/images/fontsize.png);
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    width: 20px;
+}
+a.a-imagesoff {
+    height: 27px;
+    margin-left: 5px;
+    display: inline;
+    float: left;
+    background-image: url(/bitrix/templates/ranepa/images/images.png);
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    width: 90px;
+}
+.imagesoff a.a-imagesoff{
+    background-position: 0 -27px;
+}
+.a-color2 {
+    background-position: -26px 0;
+}
+.a-color3 {
+    background-position: 100% 0;
+}
+.a-color1:hover, .color1 .a-color1 {
+    background-position: 0 -31px;
+}
+.a-color2:hover, .color2 .a-color2 {
+    background-position: -26px -31px;
+}
+.a-color3:hover, .color3 .a-color3 {
+    background-position: 100% -31px;
+}
+.a-fontsize .fontsize-small a.a-fontsize-small {
+    background-position: 0 -31px;
+}
+.a-fontsize .a-fontsize-big {
+    width: 26px;
+    background-position: -46px 0;
+}
+.a-fontsize .a-fontsize-normal {
+    width: 26px;
+    background-position: -20px 0;
+}
+a.a-fontsize-small:hover, .fontsize-small a.a-fontsize-small {
+    background-position: 0 -31px;
+}
+a.a-fontsize-normal:hover, .fontsize-normal a.a-fontsize-normal {
+    background-position: -20px -31px;
+}
+a.a-fontsize-big:hover, .fontsize-big a.a-fontsize-big {
+    background-position: -46px -31px;
+}
+.cecutient {
+    margin-top: 46px;
+}
+.cecutient#page.color2 .menu-dropdown .level1 span,
+.cecutient#page.color2 .menu-sidebar .level1 span{
+    color: #fff!important;
+}
+.cecutient#page.color3 .menu-dropdown .level1 span,
+.cecutient#page.color2 .menu-dropdown .level2 span{
+    color: #000!important;
+}
+/* mm */
+
+.mm-menu {
+    width: 80%;
+    min-width: 140px;
+    max-width: 440px;
+    color: #000;
+    background: #eee;
+    position: fixed;
+    z-index: 9999;
+}
+.mm-navbar {
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    line-height: 20px;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.mm-navbar #search {
+    width: 100%;
+    margin-top: 4px;
+}
+.mm-navbar .search_input {
+    width: 80%;
+}
+.mm-navbar .mm-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.mm-navbar > .mm-title {
+    display: block;
+    padding: 10px 0;
+}
+.mm-menu > .mm-panel {
+    background: inherit;      
+    -webkit-overflow-scrolling: touch;      
+    overflow: scroll;      
+    overflow-x: hidden;      
+    overflow-y: auto;      
+    box-sizing: border-box;      
+    padding: 0 20px;
+}
+
+.mm-menu, .mm-menu > .mm-panel {
+    margin: 0;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+}
+
+.mm-listview > li {
+    position: relative;
+}
+
+.mm-listview > li > a, .mm-listview > li > span {
+    text-overflow: ellipsis;      white-space: nowrap;      overflow: hidden;      
+    color: inherit;      display: block;      padding: 10px 10px 10px 20px;      margin: 0;
+}
+
+.mm-listview a, .mm-listview a:hover {
+    text-decoration: none;
+}
+.mm-listview .mm-next {
+    background: rgba(3, 2, 1, 0);
+    width: 50px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mm-menu .mm-listview > li:after {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.mm-listview > li:not(.mm-divider):after {
+    content: '';      
+    border-bottom-width: 1px;      
+    border-bottom-style: solid;      
+    display: block;      
+    position: absolute;      
+    left: 20px;      
+    right: 0;      
+    bottom: 0;
+}
+.mm-menu > .mm-panel.mm-hasnavbar {
+    padding-top: 40px;
+}
+.mm-menu > .mm-panel > .mm-listview:first-child, .mm-menu > .mm-panel > .mm-navbar + .mm-listview {
+    padding-left: 0;
+    margin-top: 1px;
+}
+.mm-menu > .mm-panel > .mm-listview {
+    margin: 0px -20px;
+    padding-left: 0;
+}
+.mm-menu > .mm-panel:after {
+    content: '';      
+    display: block;      
+    height: 20px;
+}
+.mm-opened .mm-listview > li:hover {
+    background: #DFDFDF;
+}
+.mm-menu .mm-navbar > *, .mm-menu .mm-navbar a {
+    color: rgba(0, 0, 0, 0.3);
+}
+.mm-panel.mm-highest {
+    z-index: 15;
+}
+.mm-menu > .mm-panel {
+    background: inherit;      
+    -webkit-overflow-scrolling: touch;      
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;      
+    box-sizing: border-box;      
+    padding: 0 20px;
+}
+.mm-panel {
+    -webkit-transition: -webkit-transform 0.4s ease;      
+    -moz-transition: -moz-transform 0.4s ease;      
+    -ms-transition: -ms-transform 0.4s ease;      
+    -o-transition: -o-transform 0.4s ease;      
+    transition: transform 0.4s ease;      
+    -webkit-transform: translate3d(100%, 0, 0);      
+    -moz-transform: translate3d(100%, 0, 0);      
+    -ms-transform: translate3d(100%, 0, 0);      
+    -o-transform: translate3d(100%, 0, 0);      
+    transform: translate3d(100%, 0, 0);
+}
+.mm-panel.mm-opened {
+    -webkit-transform: translate3d(0%, 0, 0);      
+    -moz-transform: translate3d(0%, 0, 0);      
+    -ms-transform: translate3d(0%, 0, 0);      
+    -o-transform: translate3d(0%, 0, 0);      
+    transform: translate3d(0%, 0, 0);
+}
+/*.mm-panel.mm-subopened {
+    -webkit-transform: translate3d(-30%, 0, 0);
+    -moz-transform: translate3d(-30%, 0, 0);
+    -ms-transform: translate3d(-30%, 0, 0);
+    -o-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
+}*/
+.mm-panel.mm-subopened {
+    -webkit-transform: translate3d(0%, 0, 0);
+    -moz-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+}
+.mm-navbar .mm-prev:before {
+    border-right: none;
+    border-bottom: none;
+    left: 20px;
+}
+.mm-menu .mm-listview > li .mm-next:after, .mm-menu .mm-listview > li .mm-arrow:after {
+    border-top: none;
+    border-left: none;
+    right: 20px;
+}
+.mm-prev:before, .mm-next:after, .mm-arrow:after {
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#mobilemenu {
+    font-size: 14px;  
+    overflow-x: hidden;    
+    font-family: 'Arial Narrow', sans-serif;
+}
+#mobilemenu .bx-system-auth-form ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+#mobilemenu .bx-system-auth-form li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+#mobilemenu .bx-system-auth-form input[type="submit"] {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding-left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+    color: #000000;
+}
+}
+#mobilemenu .bx-system-auth-form input[type="submit"]:after {
+    content: '';
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    position: absolute;
+    left: 20px;
+    right: 0;
+    bottom: 0;
+}
+#mobilemenu .bx-system-auth-form input[type="text"], #mobilemenu .bx-system-auth-form input[type="password"] {
+    line-height: 38px;
+    padding: 0 15px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    border: none;
+    padding-left: 2%;
+    margin: auto;
+    margin-top: 7px;
+    padding-right: 2%;
+    width: 100%;
+    height: 38px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+#mobilemenu  .bx-system-auth-form tbody tr td {
+    padding-left: 0;
+}
+/* BASKET */
+#basket {
+    height: 32px;
+    background: url(/bitrix/templates/ranepa/images/basket-light.png) no-repeat rgb(245, 245, 245) center;
+    background-size: contain;
+    line-height: 16px;
+    margin-left: 19px;
+    padding: 0 10px;
+}
+#basket:hover {
+    background-color: #951a1d;
+    color: #fff;
+}
+#basket:hover .bx-basket-block{
+    opacity: 1;
+}
+#basket .bx-basket-block{
+    opacity: 0;
+}
+.bx-basket-block{
+    padding-left: 6px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+.bx-basket-block a{
+    opacity: 0;
+    position: absolute;
+    height: 32px;
+    width: 60px;
+    margin-right: 0;
+    border-bottom: none;
+}
+.bx-hdr-profile span {
+    visibility: hidden;
+}
+.bx-hdr-profile span strong {
+    visibility: visible;
+    margin-left: -55px;
+    opacity: 0;
+}
+.ranepa-bottom {
+    padding: 20px 0;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'MyriadPro-Light';
+    background: #941a1d;
+    margin: auto;
+    margin-bottom: 26px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    text-shadow: none;
+    border-radius: 0px;
+}
+.ranepa-bottom:hover {
+    color: #ffffff;
+    background: #000000;
+}
+.ranepa-button {
+    padding: 20px 0;
+    height: 60px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'MyriadPro-Light';
+    background: #941a1d;
+    margin: auto;
+    margin-bottom: 26px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    text-shadow: none;
+    border-radius: 0px;
+}
+.ranepa-button:hover {
+    color: #ffffff;
+    background: #000000;
+}
+
+
+/* MOBILE VERSION */
+@media (max-width: 1024px){
+
+.top_right,
+#menu {
+    display: none;
+}
+.wrapper {
+    width: 90%;
+}
+.mobilemenu {
+    display: block;
+    height: 32px;
+    background: #000;
+    width: 100%;
+    color: #fff;
+}
+.mobilemenu .mobilemenu_basket{
+    height: 32px;
+    width: 60px;
+    background: url(/bitrix/templates/ranepa/images/basket-dark.png) no-repeat rgb(245, 245, 245) center;
+    background-size: contain;
+    line-height: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    float: right;
+}
+.mobilemenu_basket:hover {
+    background: #951a1d;
+    color: #fff;
+}
+.mobilemenu_basket:hover .bx-basket-block{
+    opacity: 1;
+}
+.mobilemenu_basket .bx-basket-block{
+    opacity: 0;
+}
+.mobilemenu_offcanvas {
+    display: inline-block;
+    width: 45px;
+}
+.mobilemenu_offcanvas a {
+    display: block;
+    width: 40px;
+    height: 33px;
+    z-index: 999;
+}
+.mobilemenu_button {
+    margin-top: 4px;
+    background: url(/bitrix/templates/ranepa/images/mobile-menu.png) no-repeat;
+}
+.mobilemenu_eye {
+    display: inline-block;
+    float: right;
+}
+.eye{
+    margin-left: 12px;
+}
+.mobilemenu_lang {
+    display: none;
+    /*display: inline-block;*/
+    float: right;
+}
+.lang_box ul{
+    margin-left: 12px;
+}
+.left_copy {
+    width: 100%;
+    text-align: center;
+    line-height: 14px;
+}
+.right_copy {
+    width: 100%;
+    text-align: center;
+    line-height: 14px;
+}
+.copy_box {
+    bottom: 45px;
+}
+.press_box {
+    padding-bottom: 0px;
+}
+
+.press_list {
+    width: 30%;
+    margin-right: 1%;
+    padding-bottom: 50px;
+}
+#page>.bx-system-auth-form{
+    display: none;
+}
+}
+
+@media (max-width: 1570px){
+.wrapper {
+    width: 85%;
+}
+.top_right {
+    float: left;
+    width: 100%;
+    margin-top: -116px;
+}
+.qs_box {
+    position: relative!important;
+    top: 0;
+    margin-left: 19px;
+}
+.module.lang_box.deepest, .module.eye_box.deepest {
+    /*margin-top: -45px;*/
+}
+.module._menu.topmenu.deepest {
+    position: absolute;
+    margin-right: 0;
+    /*float: right;*/
+    top: 47px;
+    right: 0;
+    /*left: 330px;*/
+}
+#headerbar {
+    float: right;
+    /*margin-top: -104px;*/
+    /*min-width: 891px;*/
+    /*width: 100%;*/
+}
+.top_right #search {
+   /*margin-left: 349px;*/
+}
+#menubar {
+    margin-top: 10px;
+}
+.ranepa-top-title.active.dark:before{
+    height: 91px;
+    margin-top: -37px;
+}
+.topsite.active.dark:before{
+    height: 215px;
+}
+}
+
+@media (max-width: 1450px){
+#menubar {
+    margin-top: 10px;
+    margin-left: 0px;
+}
+}
+@media (max-width: 1380px){
+.topmenu .menu-dropdown li.level1 a.level1, .topmenu .menu-dropdown span.level1{
+        /*font-size: 13px;*/
+        /*padding: 0px 6px 0px 7px;*/
+}
+.eye, #basket, #logout{
+    margin-left: 12px;
+}
+.all_contant{
+    top: 42px;
+}
+}
+@media (max-width: 1281px){
+.module._menu.topmenu.deepest {
+    /*right: 0;*/
+}
+}
+@media (max-width: 1258px){
+.ranepa-grid-block-title {
+    font-size: 40px;
+    line-height: 40px;
+}
+}
+@media (max-width: 1244px){
+#footer{
+    height: auto;
+    padding-bottom: 95px;
+}
+.footmenu {
+    width: 50%;
+    margin-bottom: 0px!important;
+}
+.video_box h3.module-title, #top-b .module-title, .rector_box h3.module-title, .press_box h3.module-title, .title2, .ranepa-top-title{
+    margin: 30px auto 25px auto !important;
+    font-size: 36px!important;
+    line-height: 36px!important;
+}
+.press_list.last_box{
+    margin-bottom: 0;
+}
+.module._menu.topmenu.deepest{
+    /*left: 355px;*/
+}
+.module.lang_box.deepest, .module.eye_box.deepest {
+    margin-top: 0px;
+}
+.topmenu .menu-dropdown li.parent a.level1, .topmenu .menu-dropdown li.parent span.level1 {
+    padding: 0px 15px 0px 21px;
+}
+.topmenu .menu-dropdown li.level1 a.level1, .topmenu .menu-dropdown span.level1 {
+    padding: 0px 4px 0px 5px;
+}
+#headerbar #search {
+    /*float: left;*/
+}
+#menubar {
+    margin-left: 0px;
+}
+}
+@media (max-width: 1065px){
+.video_box h3.module-title, #top-b .module-title, .rector_box h3.module-title, .press_box h3.module-title, .title2, .ranepa-top-title{
+    margin: 30px auto 25px auto !important;
+    font-size: 36px!important;
+    line-height: 36px!important;
+}
+.all_contant {
+    display: none!important;
+}
+.press_list {
+    width: 48%;
+}
+.ranepa-top-title.active.dark:before{
+    height: 91px;
+    margin-top: -32px;
+}
+}
+@media (max-width: 915px){
+.grey_line_box {
+    line-height: 25px;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+}
+@media (max-width: 790px){
+.video_box h3.module-title, #top-b .module-title, .rector_box h3.module-title, .press_box h3.module-title, .title2, .ranepa-top-title {
+    margin: 20px auto 15px auto !important;
+    font-size: 26px!important;
+    line-height: 26px!important;
+    text-align: center;
+}
+.ranepa-grid-block-title {
+    line-height: 20px;
+    font-size: 20px;
+}
+}
+@media (max-width: 615px){
+#footer{
+    height: auto;
+    padding-bottom: 95px;
+}
+#logo {
+    width: 290px;
+    max-width: 90%;
+}
+.footmenu {
+    width: 100%;
+    margin-bottom: 0px!important;
+}
+.press_list {
+    width: 100%;
+    margin-right: 0;
+}
+.grey_line_box {
+    line-height: 20px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* End */
+/* /bitrix/templates/ranepa/components/bitrix/menu/ranepa-main-mob/style.css?1441183614579 */
+/* /bitrix/templates/ranepa/components/bitrix/system.auth.form/ranepa-user/style.min.css?1441203155424 */
+/* /bitrix/js/socialservices/css/ss.min.css?15169563284566 */
+/* /bitrix/components/bitrix/sale.basket.basket.line/templates/.default/style.min.css?15172128603567 */
+/* /bitrix/templates/ranepa/components/bitrix/menu/ranepa-header-menu/style.css?15186138493883 */
+/* /bitrix/templates/ranepa/components/bitrix/breadcrumb/ranepa-nav/style.css?1444998954672 */
+/* /bitrix/templates/ranepa/styles.css?144182791429 */
+/* /bitrix/templates/ranepa/template_styles.css?153261635429590 */

@@ -1,0 +1,13 @@
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\bin\Release\Email_extractor.exe.config
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\bin\Release\Email_extractor.exe
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\bin\Release\Email_extractor.pdb
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\bin\Release\WebDriver.dll
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\bin\Release\WebDriver.xml
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.csprojAssemblyReference.cache
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.Form1.resources
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.Properties.Resources.resources
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.csproj.GenerateResource.cache
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.csproj.CoreCompileInputs.cache
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.csproj.CopyComplete
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.exe
+C:\Users\Jazis\source\repos\Email_extractor\Email_extractor\obj\Release\Email_extractor.pdb

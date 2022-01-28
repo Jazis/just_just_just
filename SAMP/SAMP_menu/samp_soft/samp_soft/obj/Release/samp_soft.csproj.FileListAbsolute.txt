@@ -1,0 +1,13 @@
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\samp_soft.exe.config
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\samp_soft.exe
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\samp_soft.pdb
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\Memory.dll
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csprojAssemblyReference.cache
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.Form1.resources
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.Properties.Resources.resources
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csproj.GenerateResource.cache
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csproj.CoreCompileInputs.cache
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.csproj.CopyComplete
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.exe
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\obj\Release\samp_soft.pdb
+C:\Users\Jazis\source\repos\samp_soft\samp_soft\bin\Release\SampAPI.dll

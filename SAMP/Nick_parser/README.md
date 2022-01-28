@@ -1,0 +1,1 @@
+Run SAMP ->  go to server -> run soft
